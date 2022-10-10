@@ -1,0 +1,19 @@
+<video id="bgvid" autoplay [muted]="true" loop src="assets/drl_background.webm"></video>
+<section id="main">
+    <div class="slogan">
+        <h1 data-aos="fade-up" data-aos-duration="600">Enhancing your<br>business solutions</h1>
+        <button data-aos="fade-up" data-aos-duration="600" (click)="scrollToElement(about)">Discover DRL</button>
+    </div>
+</section>
+<section #about id="about">
+    <app-about></app-about>
+</section>
+<section id="services">
+    <app-services></app-services>
+</section>
+<section id="products">
+    <app-products></app-products>
+</section>
+<section id="news">
+    <app-news></app-news>
+</section>

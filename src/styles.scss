@@ -1,1 +1,163 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Splash&display=swap');
+@import '~animate.css/animate.css';
+
+:root {
+    --dark-bg: #171717;
+    --white: #FFFFFF;
+    --primary: #F7A325;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--dark-bg) !important;
+}
+
+#bgvid {
+    z-index: -1;
+    object-fit: cover;
+    width: 100vw;
+    height: 95vh;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    filter: brightness(25%);
+}
+
+.section-heading {
+    text-align: center;
+
+    h2 {
+        padding-top: 85px;
+        padding-bottom: 25px;
+        margin: auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 61px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(92.18deg, #F6907E -10.89%, #F7A325 83.72%);
+        -webkit-text-fill-color: transparent;
+        color: #464646;
+        display: inline-block;
+    }
+
+    p {
+        margin: auto;
+        padding-bottom: 80px;
+        max-width: 900px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        text-align: center;
+        color: var(--white);
+    }
+}
+
+.page-header {
+    padding: 150px 0 250px 0;
+
+    h6 {
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    h1 {
+        color: var(--white);
+    }
+}
+
+.page-body-light {
+    background: var(--white);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: -100px;
+    padding-bottom: 50px;
+}
+
+.heads-light {
+    h6 {
+        font-weight: 600;
+        color: var(--primary);
+        padding: 75px 0 0 0;
+    }
+
+    h2 {
+        padding: 0 0 20px 0;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0;
+        padding-bottom: 75px;
+        max-width: 900px;
+        line-height: 35px;
+    }
+}
+
+.page-body-dark {
+    background: var(--dark-bg);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: -100px;
+    padding-bottom: 50px;
+}
+
+.heads-dark {
+    h6 {
+        font-weight: 600;
+        color: var(--primary);
+        padding: 75px 0 0 0;
+    }
+
+    h2 {
+        padding: 0 0 20px 0;
+        font-weight: 600;
+        color: var(--white);
+    }
+
+    p {
+        margin: 0;
+        padding-bottom: 75px;
+        color: var(--white);
+        max-width: 900px;
+        line-height: 35px;
+    }
+}
+
+#product1 {
+    background: url('assets/product1.png');
+    background-position: center;
+    background-size: contain;
+}
+
+#product2 {
+    background: url('assets/product2.png');
+    background-position: center;
+    background-size: contain;
+}
+
+#careers-header {
+    background: url('assets/careers.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#about-header {
+    background: url('assets/about-header.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#news-header {
+    background: url('assets/news-header.png');
+    background-position: center;
+    background-size: cover;
+}

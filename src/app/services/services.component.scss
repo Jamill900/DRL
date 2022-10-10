@@ -1,0 +1,35 @@
+.services {
+    color: var(--white);
+
+    >div>div {
+        background: #1E1E1E;
+        height: 490px;
+        max-width: 420px;
+        text-align: center;
+        padding: 90px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px;
+
+        h4 {
+            width: 100%;
+            background: #F7A325;
+            font-weight: 600;
+            padding: 10px 0;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            max-width: 340px;
+            margin: 0 auto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            opacity: 0.8;
+        }
+    }
+}

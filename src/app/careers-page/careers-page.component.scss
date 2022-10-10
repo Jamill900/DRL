@@ -1,0 +1,49 @@
+.vacancies {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vacancy {
+    width: 280px;
+    background: #f4f4f4;
+    padding: 50px 20px;
+    border-radius: 15px;
+    transition: all 1s linear;
+
+    h4 {
+        color: var(--dark-bg);
+        font-size: 18px;
+        padding-bottom: 10px;
+        white-space: pre-line;
+    }
+
+    h6 {
+        color: var(--primary);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        background: var(--dark-bg);
+        color: var(--primary);
+        font-size: 14px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+}
+
+.vacancy:hover {
+    background: var(--dark-bg);
+    h4 {
+        color: var(--white);
+    }
+    h6 {
+        color: var(--primary);
+    }
+}

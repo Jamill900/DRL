@@ -1,0 +1,37 @@
+<div class="page-header" id="careers-header">
+    <div class="container">
+        <h6>CAREERS</h6>
+        <h1>Your Path into Digital Research Lab</h1>
+    </div>
+</div>
+<div class="page-body-light">
+    <div class="container heads-light">
+        <h6 class="text-center">Why You Should Join Us</h6>
+        <h2 class="text-center">We are on a mission to build a great company<br>that deliveres great products.</h2>
+        <p class="text-center m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+            dictum est a, mattis
+            tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit
+            sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac
+            scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
+            bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+        </p>
+        <img src="assets/team-building.png" alt="" width="100%">
+    </div>
+    <div class="careers">
+        <div class="container heads-light">
+            <h6 class="text-center">Our Vacancies</h6>
+            <h2 class="text-center">We're hiring</h2>
+            <p class="text-center m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis
+                tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.
+            </p>
+        </div>
+        <div class="container m-auto vacancies">
+            <div class="vacancy mb-5" *ngFor="let career of careers" (click)="navigateTo(career.link)" data-aos="fade-up" data-aos-duration="600">
+                <h4>{{ career.name }}</h4>
+                <h6>{{ career.location }}</h6>
+            </div>
+        </div>
+    </div>
+</div>

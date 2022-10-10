@@ -1,0 +1,31 @@
+<div class="page-header" id="news-header">
+    <div class="container">
+        <h6>NEWS</h6>
+        <h1>What's new in Research & Development</h1>
+    </div>
+</div>
+<div class="page-body-dark">
+    <div class="container heads-dark">
+        <h6 class="text-center">What's New</h6>
+        <h2 class="text-center">Our Latest Articles</h2>
+        <p class="text-center m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+            molestie, dictum est a, mattis
+            tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.</p>
+    </div>
+    <div class="container news">
+        <div class="row justify-content-between">
+            <div class="col-4" data-aos="fade-up" data-aos-duration="600" *ngFor="let item of news">
+                <img src="{{ item.cover }}" alt="">
+                <div class="news-caption">
+                    <h6>{{ item.date }}</h6>
+                    <h3>{{ item.title }}
+                    </h3>
+                    <div class="read-more">
+                        <a href="">Read More</a>
+                        <div class="button-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+
+
+section {
+    position: sticky;
+    top: 0;
+}
+
+.apply {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    color: var(--white);
+
+    h1 {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 61px;
+        opacity: 0.8;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 67px;
+
+        a {
+            color: var(--white);
+            text-decoration: none;
+        }
+    }
+}

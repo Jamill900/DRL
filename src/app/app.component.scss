@@ -1,0 +1,39 @@
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* background: linear-gradient(92.18deg, #F6907E -10.89%, #F7A325 83.72%); */
+    background: var(--white);
+    z-index: 999;
+    border-radius: 50px;
+    transform: translateY(100vh);
+    animation: preloader 2s ease-in-out;
+}
+
+@keyframes preloader {
+    0% {
+        transform: translateY(100vh);
+        height: 100vh;
+    }
+
+    45% {
+        transform: translateY(0);
+        height: 100vh;
+    }
+
+    55% {
+        transform: translateY(0);
+        height: 100vh;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        height: 0;
+
+    }
+}

@@ -1,0 +1,55 @@
+.about-us {
+    p {
+        line-height: 35px;
+    }
+}
+
+.team {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+
+    h3 {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 14px;
+        color: var(--primary);
+    }
+
+    img {
+        width: 320px;
+        border-radius: 15px;
+    }
+
+    .team-card {
+        margin: 20px 0;
+    }
+}
+
+.profile {
+    h5 {
+        margin-bottom: 0;
+        padding: 0 5px;
+        font-size: 12px;
+        color: #0072B1;
+    }
+
+    path {
+        fill: #0072B1;
+    }
+}
+
+.profile:hover {
+
+    path {
+        fill: var(--dark-bg);
+    }
+
+    h5 {
+        color: var(--dark-bg);
+    }
+
+}
