@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AboutPageComponent } from './about-page/about-page.component';
+import { AiqumComponent } from './aiqum/aiqum.component';
 import { CareersPageComponent } from './careers-page/careers-page.component';
 import { MainComponent } from './main/main.component';
 import { NewsPageComponent } from './news-page/news-page.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'products', component: ProductsPageComponent },
   { path: 'news', component: NewsPageComponent },
   { path: 'careers', component: CareersPageComponent },
-  { path: 'about', component: AboutPageComponent }
+  { path: 'about', component: AboutPageComponent },
+  { path: 'aiqum', component: AiqumComponent}
 ];
 
 @NgModule({

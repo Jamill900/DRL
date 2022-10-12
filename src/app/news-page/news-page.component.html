@@ -13,8 +13,13 @@
             tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.</p>
     </div>
     <div class="container news">
-        <div class="row justify-content-between">
-            <div class="col-4" data-aos="fade-up" data-aos-duration="600" *ngFor="let item of news">
+        <div class="news-search col-12">
+            <input class="search-field" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
+                placeholder="Search news"><i class="fa fa-search"></i>
+        </div>
+        <div class="row">
+            <div class="col-4 news-card" data-aos="fade-up" data-aos-duration="600"
+                *ngFor="let item of news | filter: searchText | paginate: {itemsPerPage: 5, currentPage: p}">
                 <img src="{{ item.cover }}" alt="">
                 <div class="news-caption">
                     <h6>{{ item.date }}</h6>
@@ -27,5 +32,7 @@
                 </div>
             </div>
         </div>
+        <pagination-controls class="text-center mt-3" (pageChange)="onPageChange($event)" previousLabel="<"
+            nextLabel=">"></pagination-controls>
     </div>
 </div>

@@ -1,15 +1,18 @@
 .news {
 
+
     >div>div {
         margin-bottom: 30px;
 
         .news-caption {
             background: #1E1E1E;
             padding: 35px;
+            border-radius: 0 0 15px 15px;
         }
 
         img {
             width: 100%;
+            border-radius: 15px 15px 0 0;
         }
 
         h6 {
@@ -31,6 +34,9 @@
     }
 }
 
+.heads-dark p{
+    padding-bottom: 50px !important;
+}
 .button-line {
     margin-top: 10px;
     width: 30px;
@@ -71,4 +77,28 @@ button {
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
+}
+
+
+.news-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    input {
+        width: 295px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        background: #1E1E1E;
+        color: var(--white);
+    }
+
+    i {
+        float: right;
+        color: var(--primary);
+    }
 }

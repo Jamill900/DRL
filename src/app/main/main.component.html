@@ -1,8 +1,25 @@
-<video id="bgvid" autoplay [muted]="true" loop src="assets/drl_background.webm"></video>
-<section id="main">
-    <div class="slogan">
-        <h1 data-aos="fade-up" data-aos-duration="600">Enhancing your<br>business solutions</h1>
-        <button data-aos="fade-up" data-aos-duration="600" (click)="scrollToElement(about)">Discover DRL</button>
+<video id="bgvid" autoplay [muted]="true" loop src="assets/drl_bg.webm"></video>
+<section id="main" class="container">
+    <div>
+        <h1 data-aos="fade-up" data-aos-duration="600">AIQUM</h1>
+        <p data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent
+            per conubia nostra.</p>
+        <button data-aos="fade-up" data-aos-duration="600" (click)="scrollToElement(about)">Learn More</button>
+    </div>
+    <div class="scroll-down">
+        <div class="d-flex flex-row justify-content-center">
+            <svg width="22" height="37" viewBox="0 0 22 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0.75 11C0.75 5.33908 5.33908 0.75 11 0.75C16.6609 0.75 21.25 5.33908 21.25 11V26C21.25 31.6609 16.6609 36.25 11 36.25C5.33908 36.25 0.75 31.6609 0.75 26V11Z"
+                    stroke="#F7A325" stroke-width="1.5" />
+                <circle cx="11" cy="10" r="5" fill="#F7A325" />
+            </svg>
+            <div>
+                <h5>Discover Our Products and Services</h5>
+                <h6>Scroll Down</h6>
+            </div>
+        </div>
     </div>
 </section>
 <section #about id="about">

@@ -22,8 +22,11 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.6.1",
+    "ng2-search-filter": "^0.5.1",
     "ngx-beautify-cursor": "^1.0.3",
+    "ngx-pagination": "^6.0.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

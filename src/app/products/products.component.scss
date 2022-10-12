@@ -10,6 +10,7 @@
         height: 572px;
         max-width: 521px;
         padding: 50px;
+        z-index: 20;
         border-radius: 15px;
 
         h5 {
@@ -23,23 +24,6 @@
             font-size: 12px;
             line-height: 15px;
             color: #F7A325;
-        }
-
-        p {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 25px;
-            transform: translateY(400px);
-            visibility: hidden;
-            opacity: 0;
-            transition: all .4s ease-in-out;
-        }
-
-        .read-more {
-            transform: translateY(400px);
-            visibility: hidden;
-            opacity: 0;
-            transition: all .4s ease-in-out;
         }
 
         >div {
@@ -56,23 +40,27 @@
         }
     }
 
-    #product1:hover,
-    #product2:hover {
+    h4{
+        color: var(--dark-bg);
+        text-align: center;
+        font-size: 16px;
+        z-index: 19;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-top: 10px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all .5s linear;
+    }
 
-        .product-title {
+    .product-card:hover {
+        h4 {
+            opacity: 1;
             transform: translateY(0px);
         }
 
-        .read-more {
-            transform: translateY(0px);
-            visibility: visible;
-            opacity: 1;
-        }
-
-        p {
-            transform: translateY(0px);
-            visibility: visible;
-            opacity: 1;
+        h4:hover {
+            color: var(--primary);
         }
     }
 

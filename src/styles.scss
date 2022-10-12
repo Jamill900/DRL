@@ -27,7 +27,7 @@ body {
     position: fixed !important;
     top: 0;
     left: 0;
-    filter: brightness(25%);
+    filter: brightness(45%);
 }
 
 .section-heading {
@@ -135,13 +135,13 @@ body {
 #product1 {
     background: url('assets/product1.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #product2 {
     background: url('assets/product2.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #careers-header {

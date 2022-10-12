@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { NgxBeautifyCursorModule } from 'ngx-beautify-cursor';
@@ -22,6 +22,9 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { CareersPageComponent } from './careers-page/careers-page.component';
 import { NewsPageComponent } from './news-page/news-page.component';
 import { AiqumComponent } from './aiqum/aiqum.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { Ng2SearchPipeModule } from './search-pipe/ng2-filter.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -48,9 +51,14 @@ import { AiqumComponent } from './aiqum/aiqum.component';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
+    FormsModule
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

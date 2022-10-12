@@ -12,6 +12,11 @@ export class NewsPageComponent implements OnInit {
   news: News[] = [];
   loading = false;
 
+  title: any;
+  p: number = 1;
+  filterTerm!: string;
+  searchText: any;
+
   constructor(private database: DatabaseService) { }
 
   ngOnInit(): void {
@@ -21,7 +26,12 @@ export class NewsPageComponent implements OnInit {
   getNews() {
     this.loading = true;
     this.database.getNews().subscribe(news =>
-      this.news = news);
+      this.news = news.reverse());
+  }
+
+  onPageChange(page: number) {
+    this.p = page;
+    window.scroll(0, 500);
   }
 
 }
