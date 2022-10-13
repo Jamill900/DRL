@@ -74,3 +74,9 @@ button {
     font-size: 12px;
     line-height: 15px;
 }
+
+button:hover {
+    transition: all .5s linear;
+    background: var(--primary);
+    color: var(--dark-bg);
+}

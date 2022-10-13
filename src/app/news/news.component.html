@@ -6,38 +6,14 @@
 
 <div class="container news">
     <div class="row justify-content-between">
-        <div class="col-4" data-aos="fade-up" data-aos-duration="600">
-            <img src="assets/news1.png" alt="">
+        <div class="col-4" data-aos="fade-up" data-aos-duration="600" *ngFor="let item of news | paginate: {itemsPerPage: 3, currentPage: p}">
+            <img src="{{ item.cover }}" alt="">
             <div class="news-caption">
-                <h6>5 September 2022</h6>
-                <h3>A successful application of the S.I.Q.E. algorithm on seismic data for 3 prospects in the SWAP area
+                <h6>{{ item.date }}</h6>
+                <h3>{{ item.title }}
                 </h3>
                 <div class="read-more">
                     <a href="">Read More</a>
-                    <div class="button-line"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4" data-aos="fade-up" data-aos-duration="600">
-            <img src="assets/news2.png" alt="">
-            <div class="news-caption">
-                <h6>23 August 2022</h6>
-                <h3>A successful application of the S.I.Q.E. algorithm on seismic data for 3 prospects in the SWAP area
-                </h3>
-                <div class="read-more">
-                    <a href="">Read More</a>
-                    <div class="button-line"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4" data-aos="fade-up" data-aos-duration="600">
-            <img src="assets/news3.png" alt="">
-            <div class="news-caption">
-                <h6>16 October 2022</h6>
-                <h3>A successful application of the S.I.Q.E. algorithm on seismic data for 3 prospects in the SWAP area
-                </h3>
-                <div class="read-more">
-                    <a>Read More</a>
                     <div class="button-line"></div>
                 </div>
             </div>

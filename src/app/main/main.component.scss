@@ -38,15 +38,21 @@
     top: 0;
 } */
 
+h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 200px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
 h1 {
     color: var(--white);
-    padding-top: 200px;
     margin: auto;
     font-style: normal;
     font-weight: 600;
     font-size: 60px;
     padding-bottom: 10px;
-    line-height: 113%;
     text-align: left;
     letter-spacing: 0.04em;
     text-transform: capitalize;
@@ -120,9 +126,11 @@ circle {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(16px);
     }
+
     0% {
         transform: translateY(0px);
     }

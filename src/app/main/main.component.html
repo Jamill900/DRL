@@ -1,13 +1,14 @@
 <video id="bgvid" autoplay [muted]="true" loop src="assets/drl_bg.webm"></video>
 <section id="main" class="container">
     <div>
+        <h3>Latest Product</h3>
         <h1 data-aos="fade-up" data-aos-duration="600">AIQUM</h1>
         <p data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent
             per conubia nostra.</p>
-        <button data-aos="fade-up" data-aos-duration="600" (click)="scrollToElement(about)">Learn More</button>
+        <button data-aos="fade-up" data-aos-duration="600" routerLink="/aiqum">Learn More</button>
     </div>
-    <div class="scroll-down">
+    <div class="scroll-down" (click)="scrollToElement(about)">
         <div class="d-flex flex-row justify-content-center">
             <svg width="22" height="37" viewBox="0 0 22 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
