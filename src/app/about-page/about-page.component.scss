@@ -21,7 +21,7 @@
 
     img {
         width: 320px;
-        border-radius: 15px;
+
     }
 
     .team-card {
@@ -52,4 +52,25 @@
         color: var(--dark-bg);
     }
 
+}
+
+button {
+    display: grid;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 48px;
+    background: var(--primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+button:hover {
+    transition: all .2s linear;
+    background: var(--dark-bg);
+    color: var(--primary);
 }

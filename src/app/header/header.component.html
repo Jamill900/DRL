@@ -1,6 +1,6 @@
 <nav class="navbar backdrop-header navbar-expand-lg navbar-dark animate__fadeInDown animate__animated">
     <div class="container">
-        <a class="navbar-brand logo" routerLink="/home"><img src="assets/drl_logo.svg" alt=""
+        <a class="navbar-brand logo" routerLink="/home"><img src="assets/logo_color.svg" alt=""
                 width="130px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,6 +21,10 @@
                         [routerLinkActive]="['active']">Products</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/services"
+                        [routerLinkActive]="['active']">Services</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/news"
                         [routerLinkActive]="['active']">News</a>
                 </li>
@@ -33,9 +37,60 @@
                         [routerLinkActive]="['active']">About</a>
                 </li>
                 <li class="nav-item contact">
-                    <a class="nav-link" (click)="toggleNavBar()">Contact Us</a>
+                    <a class="nav-link" (click)="toggleNavBar()" (click)="openLg(content)">Contact Us</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Contact Us</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form action="" method="POST">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="First Name" required>
+                    <div class="underline"></div>
+                    <label for="">First Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Last Name" required>
+                    <div class="underline"></div>
+                    <label for="">Last Name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="email" name="Email" required>
+                    <div class="underline"></div>
+                    <label for="">Email Address</label>
+                </div>
+                <div class="input-data">
+                    <input type="phone" name="phone" required>
+                    <div class="underline"></div>
+                    <label for="">Phone Number</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" name="message" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Write your message</label>
+                    <br />
+                </div>
+            </div>
+            <div class="button-submit">
+                <button><input class="submit" type="submit" value="Submit"></button>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+</ng-template>

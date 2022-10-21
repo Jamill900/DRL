@@ -1,34 +1,7 @@
 <svg width="46" height="50" viewBox="0 0 46 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.68755 31.1733H0V49.9999H4.68755V31.1733Z" fill="url(#paint0_linear_155_9)"/>
-<path d="M14.8438 18.2095H10.1562V50.0001H14.8438V18.2095Z" fill="url(#paint1_linear_155_9)"/>
-<path d="M24.9999 0H20.3124V50H24.9999V0Z" fill="url(#paint2_linear_155_9)"/>
-<path d="M35.1562 18.2095H30.4687V50.0001H35.1562V18.2095Z" fill="url(#paint3_linear_155_9)"/>
-<path d="M45.3126 31.1733H40.625V49.9999H45.3126V31.1733Z" fill="url(#paint4_linear_155_9)"/>
-<defs>
-<linearGradient id="paint0_linear_155_9" x1="0.517246" y1="33.1501" x2="9.404" y2="35.9172" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F6907E"/>
-<stop offset="0.0001" stop-color="#F6907E"/>
-<stop offset="1" stop-color="#F7A325"/>
-</linearGradient>
-<linearGradient id="paint1_linear_155_9" x1="10.6735" y1="21.5475" x2="20.1013" y2="23.286" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F6907E"/>
-<stop offset="0.0001" stop-color="#F6907E"/>
-<stop offset="1" stop-color="#F7A325"/>
-</linearGradient>
-<linearGradient id="paint2_linear_155_9" x1="20.8297" y1="5.25" x2="30.4457" y2="6.37738" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F6907E"/>
-<stop offset="0.0001" stop-color="#F6907E"/>
-<stop offset="1" stop-color="#F7A325"/>
-</linearGradient>
-<linearGradient id="paint3_linear_155_9" x1="30.9859" y1="21.5475" x2="40.4137" y2="23.286" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F6907E"/>
-<stop offset="0.0001" stop-color="#F6907E"/>
-<stop offset="1" stop-color="#F7A325"/>
-</linearGradient>
-<linearGradient id="paint4_linear_155_9" x1="41.1422" y1="33.1501" x2="50.029" y2="35.9172" gradientUnits="userSpaceOnUse">
-<stop stop-color="#F6907E"/>
-<stop offset="0.0001" stop-color="#F6907E"/>
-<stop offset="1" stop-color="#F7A325"/>
-</linearGradient>
-</defs>
+<path d="M4.68755 31.1733H0V49.9999H4.68755V31.1733Z" fill="#0085FF"/>
+<path d="M14.8438 18.2095H10.1562V50.0001H14.8438V18.2095Z" fill="#0085FF"/>
+<path d="M24.9999 0H20.3124V50H24.9999V0Z" fill="#0085FF"/>
+<path d="M35.1562 18.2095H30.4687V50.0001H35.1562V18.2095Z" fill="#0085FF"/>
+<path d="M45.3126 31.1733H40.625V49.9999H45.3126V31.1733Z" fill="#0085FF"/>
 </svg>

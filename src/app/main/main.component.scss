@@ -10,8 +10,6 @@
     padding-bottom: 200px;
     width: 100%;
     background: var(--white);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
 }
 
 #products {
@@ -19,8 +17,6 @@
     margin-top: -100px;
     width: 100%;
     background: var(--white);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
 }
 
 #services,
@@ -29,8 +25,6 @@
     margin-top: -100px;
     width: 100%;
     background: var(--dark-bg);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
 }
 
 /* section {
@@ -43,7 +37,7 @@ h3 {
     text-transform: uppercase;
     padding-top: 200px;
     font-weight: 600;
-    color: var(--primary);
+    color: #F7A325;
 }
 
 h1 {
@@ -77,18 +71,18 @@ button {
     outline: none;
     border: none;
     background: none;
-    border: 2px solid var(--primary);
+    border: 2px solid #F7A325;
     color: var(--white);
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
     text-decoration: none;
-    cursor: none;
+    cursor: pointer;
 }
 
 button:hover {
     transition: all linear .05s;
-    background: var(--primary);
+    background: #F7A325;
 }
 
 .scroll-down {
@@ -97,6 +91,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
+    cursor: pointer;
 }
 
 h5 {

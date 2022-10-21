@@ -1,16 +1,8 @@
-
-
-section {
-    position: sticky;
-    top: 0;
-}
-
 .apply {
-    padding-top: 100px;
+    background: linear-gradient(91.64deg, #0085FF -0.76%, #0085FF 99.99%, #40A4FF 100%);;
+    padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
     color: var(--white);
 
     h1 {
@@ -24,10 +16,15 @@ section {
         font-weight: 500;
         font-size: 55px;
         line-height: 67px;
+        opacity: .8;
 
         a {
             color: var(--white);
             text-decoration: none;
         }
+    }
+
+    h2:hover {
+        opacity: 1;
     }
 }

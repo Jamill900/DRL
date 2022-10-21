@@ -15,7 +15,7 @@
             font-weight: 600;
             font-size: 12px;
             line-height: 15px;
-            color: #F7A325;
+            color: var(--primary);
         }
 
         p {
@@ -28,8 +28,7 @@ button {
     text-align: center;
     width: 163px;
     height: 52px;
-    border-radius: 5px;
-    // background: linear-gradient(92.18deg, #F6907E -10.89%, #F7A325 83.72%);
+    // background: linear-gradient(92.18deg, #F6907E -10.89%, var(--primary) 83.72%);
     //background: var(--primary);
     outline: none;
     border: none;
@@ -53,7 +52,7 @@ button:hover {
     margin-top: 10px;
     width: 30px;
     height: 3px;
-    background-color: #F7A325;
+    background-color: var(--primary);
     transition: all .2s linear;
 }
 
@@ -68,7 +67,7 @@ button:hover {
 
 .read-more:hover {
     a {
-        color: #F7A325;
+        color: var(--primary);
     }
 
     .button-line {

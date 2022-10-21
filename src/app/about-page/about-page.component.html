@@ -5,22 +5,34 @@
     </div>
 </div>
 <div class="page-body-light">
-    <div class="container heads-light">
+    <div class="container heads-light" data-aos="fade-up" data-aos-duration="600">
         <h6 class="text-center">Who We Are</h6>
         <h2 class="text-center">We are the experts of digital research</h2>
     </div>
-    <div class="container row m-auto about-us">
+    <div class="container row m-auto about-us" data-aos="fade-up" data-aos-duration="600">
         <p class="text-left col-lg-6 col-12 m-auto">
-            We help our partners to realize ideas and transform companies by creating digital solutions with our
-            engineering creativity and cutting-edge digital capabilities for competitive differentiation. We are
+            Digital Research Lab is a progressive R&D center that help our partners to realize ideas and transform their
+            companies by creating digital solutions with engineering ingenuity and innovative digital skills. We are
             thriving to become the leading digital enabler and an architect of digital transformation in the region by
             solving engineering and R&D problems that will empower organizations to sustain, expand and diversify their
-            market access or public impact. We work with key actors in the country in the Energy and Finance sectors.
-            Turn on screen reader support
+            market access or public impact. We work with key actors of the country in the Energy and Finance sectors.
         </p>
-        <img class="col-lg-6 col-12" src="assets/team-building.jpg" alt="">
+        <img class="col-lg-6 col-12 mt-3 mb-3" src="assets/team-building.jpg" alt="">
+        <p class="text-left col-lg-6 col-12 m-auto" data-aos="fade-up" data-aos-duration="600">
+            <b style="font-size: 24px;">Why do you need <span style="color: var(--primary);">Digital Transformation</span>?</b><br><br>
+            <b>•</b> Go beyond simply eliminating repetitive tasks, but via digital solutions unlock the full potential of your
+            resources and processes.<br><br>
+            <b>•</b> Gain unique insights into your operations and customers, enhance your business strategy through an
+            intelligent and data driven approach.<br><br>
+
+        </p>
+        <p class="text-left col-lg-6 col-12 m-auto" data-aos="fade-up" data-aos-duration="600">
+            <b>•</b> Stay relevant today and be prepared for tomorrow with digital products and processing power.<br><br>
+            <b>•</b> Re-invent the way end users experience your products or services.
+
+        </p>
     </div>
-    <div class="container heads-light">
+    <div class="container heads-light" data-aos="fade-up" data-aos-duration="600">
         <h6 class="text-center">Meet The Team</h6>
         <h2 class="text-center">Different backgrounds united by R&D</h2>
         <p class="text-center m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
@@ -29,7 +41,7 @@
         </p>
     </div>
     <div class="team container">
-        <div class="team-card" *ngFor="let member of team">
+        <div class="team-card" *ngFor="let member of team" data-aos="fade-up" data-aos-duration="600">
             <img src="{{ member.cover }}" alt="">
             <h3>{{ member.name }}</h3>
             <h6>{{ member.position }}</h6>
@@ -44,4 +56,6 @@
             </div>
         </div>
     </div>
+    <button>Join Our Team</button>
 </div>
+<app-apply></app-apply>

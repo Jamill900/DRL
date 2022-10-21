@@ -12,16 +12,15 @@ a.nav-link {
 }
 
 .nav-item>.nav-link {
-    color: var(--white);
+    color: var(--dark-bg);
     text-decoration: none;
     display: inline-block;
     position: relative;
 }
 
 .navbar-nav> li:last-child {
-    border: 1px solid #F7A325;
+    border: 1.5px solid var(--primary);
     padding: 10px 20px;
-    border-radius: 5px;
 }
 
 .nav-item>.nav-link::after {
@@ -42,16 +41,17 @@ a.nav-link {
 .nav-item>.nav-links.active::after {
     width: 100%;
     background: var(--primary);
-    box-shadow: 0 0 10px 2px var(--primary);
+    box-shadow: 0 0 2px 1px var(--primary);
 }
 
 .nav-link.active {
-    color: var(--white) !important;
+    color: var(--primary) !important;
 }
 
 nav {
     //background: rgba(0, 0, 0, 0.7) !important;
     //backdrop-filter: blur(12px) !important;
+    background: var(--white);
     z-index: 20;
     padding: 0;
 }
@@ -144,7 +144,7 @@ form .form-row .textarea {
     content: "";
     height: 2px;
     width: 100%;
-    background: linear-gradient(45deg, var(--orange), var(--pink), var(--purple), var(--blue));
+    background: var(--primary);
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
@@ -194,12 +194,12 @@ form .form-row .textarea {
         outline: none;
         color: var(--blue);
         padding: 12.5px 35px;
-        border: 2px solid var(--blue);
+        border: 2px solid var(--primary);
     }
 
     button:hover {
         color: var(--white);
-        background: var(--blue);
+        background: var(--primary);
         transition-duration: 600ms;
 
         .submit {

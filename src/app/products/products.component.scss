@@ -10,8 +10,7 @@
         height: 572px;
         max-width: 521px;
         padding: 50px;
-        z-index: 20;
-        border-radius: 15px;
+        z-index: 20
 
         h5 {
             font-weight: 400;
@@ -23,7 +22,7 @@
             font-weight: 600;
             font-size: 12px;
             line-height: 15px;
-            color: #F7A325;
+            color: var(--primary);
         }
 
         >div {
@@ -51,9 +50,13 @@
         opacity: 0;
         transform: translateY(30px);
         transition: all .4s linear;
+        cursor:  pointer;
     }
 
     .product-card:hover {
+
+        cursor: pointer;
+
         h4 {
             opacity: 1;
             transform: translateY(0px);
@@ -81,11 +84,20 @@
         }
 
         .circle {
-            border: 2px solid #F7A325;
+            border: 2px solid var(--primary);
             padding: 35px 30px;
             border-radius: 100px;
-            transition: all 1s linear;
+            transition: all .3s linear;
+            cursor: pointer;
         }
+    }
+}
+
+.circle:hover {
+    background: var(--primary);
+
+    path{
+        stroke: var(--white) 
     }
 }
 
@@ -93,7 +105,7 @@
     margin-top: 10px;
     width: 30px;
     height: 3px;
-    background-color: #F7A325;
+    background-color: var(--primary);
     transition: all .2s linear;
 }
 
@@ -108,7 +120,7 @@
 
 .read-more:hover {
     a {
-        color: #F7A325;
+        color: var(--primary);
     }
 
     .button-line {
@@ -125,7 +137,7 @@ button {
     border: none;
     outline: none;
     cursor: none;
-    color: #F7A325;
+    color: var(--primary);
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;

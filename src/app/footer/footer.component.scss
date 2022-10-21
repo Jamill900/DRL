@@ -1,10 +1,10 @@
 .apply {
-    background: linear-gradient(92.18deg, #F6907E -10.89%, #F7A325 83.72%);
+    background: linear-gradient(91.64deg, #0085FF -0.76%, #0085FF 99.99%, #40A4FF 100%);
 }
 
 .copyright {
     text-align: center;
-    background: linear-gradient(92.18deg, #F6907E -10.89%, #F7A325 83.72%) !important;
+    background: linear-gradient(91.64deg, #0085FF -0.76%, #0085FF 99.99%, #40A4FF 100%) !important;
     color: var(--white);
     padding: 15px 0;
     font-weight: 500;
@@ -34,6 +34,7 @@
 
             li {
                 margin: 0 20px;
+                cursor: pointer;
             }
         }
 
