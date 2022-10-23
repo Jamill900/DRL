@@ -1,4 +1,4 @@
-.apply {
+/* .apply {
     background: linear-gradient(91.64deg, #0085FF -0.76%, #0085FF 99.99%, #40A4FF 100%);
 }
 
@@ -74,5 +74,50 @@
 
     h2:hover {
         opacity: 1;
+    }
+} */
+
+
+footer {
+    background: var(--white);
+
+    h6 {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            font-weight: 500;
+            font-size: 12px;
+            color: #818181;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .breaking-line {
+        height: 2px;
+        background: #EFEFEF;
+    }
+
+    .text-right {
+        h5 {
+            float: right;
+        }
+    }
+    .line-bottom {
+        margin-top: 30px;
+    }
+
+    .copyright {
+        padding: 20px 0;
+        h5 {
+            font-size: 12px;
+            color: #818181;
+        }
     }
 }

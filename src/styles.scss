@@ -16,15 +16,15 @@
 }
 
 body {
-    background: var(--dark-bg) !important;
+    background: var(--white) !important;
 }
 
 #bgvid {
     z-index: -1;
     object-fit: cover;
     width: 100vw;
-    height: 95vh;
-    position: fixed !important;
+    height: 100vh;
+    position: absolute !important;
     top: 0;
     left: 0;
     filter: brightness(45%);

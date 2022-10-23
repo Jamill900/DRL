@@ -1,83 +1,161 @@
-a.nav-link {
-    font-size: 14px;
-    padding-bottom: 0 !important;
+nav.navbar-aiqum {
+    //background: rgba(0, 0, 0, 0.7) !important;
+    //backdrop-filter: blur(12px) !important;
+    //background: var(--white);
+    z-index: 20;
+    padding: 0;
+
+    a.nav-link {
+        font-size: 14px;
+        padding-bottom: 0 !important;
+    }
+
+    .nav-item {
+        list-style-type: none;
+        display: inline-block;
+        margin: 5px 10px;
+        cursor: pointer;
+
+    }
+
+    .nav-item>.nav-link {
+        color: var(--white);
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    .navbar-nav>li:last-child {
+        border: 1.5px solid #F7A325;
+        padding: 10px 20px;
+    }
+
+    .nav-item>.nav-link::after {
+        content: "";
+        display: block !important;
+        margin: auto;
+        height: 3px;
+        width: 5px !important;
+        border-radius: 15px;
+        top: 5px;
+        margin-top: 5px;
+        background: transparent;
+        transition: all 0.3s;
+
+    }
+
+    .nav-item>.nav-links:hover::after,
+    .nav-item>.nav-links.active::after {
+        width: 100%;
+        background: #F7A325;
+        box-shadow: 0 0 2px 1px #F7A325;
+    }
+
+    .nav-link.active {
+        color: #F7A325 !important;
+    }
+
+    @media (max-width: 991px) {
+
+        .nav-item {
+            text-align: center;
+        }
+
+        .navbar-nav {
+            margin: auto;
+        }
+    }
 }
 
-.nav-item {
-    list-style-type: none;
-    display: inline-block;
-    margin: 5px 10px;
-    cursor: pointer;
-
-}
-
-.nav-item>.nav-link {
-    color: var(--dark-bg);
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-}
-
-.navbar-nav> li:last-child {
-    border: 1.5px solid var(--primary);
-    padding: 10px 20px;
-}
-
-.nav-item>.nav-link::after {
-    content: "";
-    display: block !important;
-    margin: auto;
-    height: 3px;
-    width: 5px !important;
-    border-radius: 15px;
-    top: 5px;
-    margin-top: 5px;
-    background: transparent;
-    transition: all 0.3s;
-
-}
-
-.nav-item>.nav-links:hover::after,
-.nav-item>.nav-links.active::after {
-    width: 100%;
-    background: var(--primary);
-    box-shadow: 0 0 2px 1px var(--primary);
-}
-
-.nav-link.active {
-    color: var(--primary) !important;
-}
-
-nav {
+nav.navbar-all {
     //background: rgba(0, 0, 0, 0.7) !important;
     //backdrop-filter: blur(12px) !important;
     background: var(--white);
     z-index: 20;
     padding: 0;
-}
 
-@media (max-width: 991px) {
+    a.nav-link {
+        font-size: 14px;
+        padding-bottom: 0 !important;
+    }
 
     .nav-item {
-        text-align: center;
+        list-style-type: none;
+        display: inline-block;
+        margin: 5px 10px;
+        cursor: pointer;
+
     }
-    .navbar-nav {
+
+    .nav-item>.nav-link {
+        color: var(--dark-bg);
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    .navbar-nav>li:last-child {
+        border: 1.5px solid var(--primary);
+        padding: 10px 20px;
+    }
+
+    .nav-item>.nav-link::after {
+        content: "";
+        display: block !important;
         margin: auto;
+        height: 3px;
+        width: 5px !important;
+        border-radius: 15px;
+        top: 5px;
+        margin-top: 5px;
+        background: transparent;
+        transition: all 0.3s;
+
+    }
+
+    .nav-item>.nav-links:hover::after,
+    .nav-item>.nav-links.active::after {
+        width: 100%;
+        background: var(--primary);
+        box-shadow: 0 0 2px 1px var(--primary);
+    }
+
+    .nav-link.active {
+        color: var(--primary) !important;
+    }
+
+    nav {
+        //background: rgba(0, 0, 0, 0.7) !important;
+        //backdrop-filter: blur(12px) !important;
+        background: var(--white);
+        z-index: 20;
+        padding: 0;
+    }
+
+    @media (max-width: 991px) {
+
+        .nav-item {
+            text-align: center;
+        }
+
+        .navbar-nav {
+            margin: auto;
+        }
     }
 }
 
 /* Contact Modal */
- .text {
+.text {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
 }
 
- form {
+form {
     padding: 30px 0 0 0;
 }
 
- form .form-row {
+form .form-row {
     display: flex;
     margin: 32px 0;
 }
@@ -158,15 +236,15 @@ form .form-row .textarea {
 }
 
 @media (max-width: 700px) {
-     .text {
+    .text {
         font-size: 30px;
     }
 
-     form {
+    form {
         padding: 10px 0 0 0;
     }
 
-     form .form-row {
+    form .form-row {
         display: block;
     }
 
