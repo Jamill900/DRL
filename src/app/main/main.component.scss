@@ -1,5 +1,5 @@
 #main {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,13 +7,12 @@
 }
 
 #about {
-    padding-bottom: 200px;
+    padding: 100px 0;
     width: 100%;
     background: var(--white);
 }
 
 #products {
-    padding-bottom: 200px;
     margin-top: -100px;
     width: 100%;
     background: var(--white);
@@ -22,7 +21,6 @@
 #services,
 #news {
     padding-bottom: 200px;
-    margin-top: -100px;
     width: 100%;
     background: var(--dark-bg);
 }
@@ -64,7 +62,6 @@ button {
     text-align: center;
     width: 163px;
     height: 52px;
-    border-radius: 5px;
     // background: linear-gradient(92.18deg, #F6907E -10.89%, #F7A325 83.72%);
     //background: var(--primary);
     margin-top: 20px;

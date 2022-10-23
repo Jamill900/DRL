@@ -1,10 +1,18 @@
 .accordion {
+    * {
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
     .accordion-button {
         font-size: 20px;
+        border: none !important;
     }
+
+    background: none !important;
+
     * {
         border-radius: 0;
-        background: white;
     }
 
     h6 {
@@ -13,6 +21,46 @@
 
     p {
         font-size: 16px;
+    }
+
+    button {
+        color: var(--white) !important;
+        padding: 40px 20px !important;
+
+        h3 {
+            background: none !important;
+        }
+    }
+}
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F7A325'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border: none !important;
+}
+
+
+.accordion-body {
+    background: #1E1E1E !important;
+    padding: 50px;
+
+    * {
+        background: none;
+    }
+
+    p {
+        color: var(--white) !important;
+    }
+
+    h6 {
+        color: var(--primary) !important;
+        padding: 30px 0 20px 0 !important;
     }
 }
 
@@ -27,6 +75,7 @@
 
 .read-more {
     cursor: pointer;
+
     a {
         color: var(--dark-bg);
         text-decoration: none;

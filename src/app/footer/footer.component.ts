@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import AOS from "aos";
 
 @Component({
@@ -8,10 +9,13 @@ import AOS from "aos";
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
     AOS.init();
   }
 
+  openLg(content: any) {
+    this.modalService.open(content, { size: 'lg' });
+  }
 }

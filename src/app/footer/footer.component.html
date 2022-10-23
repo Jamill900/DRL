@@ -27,22 +27,22 @@
     <div class="container row m-auto">
         <div class="breaking-line col-12 mb-5"></div>
         <div class="col-12 col-lg-3">
-            <img src="assets/logo_color.svg" alt="" width="170px">
+            <img src="assets/logo_drl.svg" alt="" width="170px">
         </div>
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-3 links">
             <h6>Resources</h6>
             <ul>
-                <li>Services</li>
+                <li routerLink="/services">Services</li>
                 <li>Products</li>
             </ul>
         </div>
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-3 links">
             <h6>Company</h6>
             <ul>
-                <li>About</li>
-                <li>News</li>
-                <li>Careers</li>
-                <li>Contact Us</li>
+                <li routerLink="/about">About</li>
+                <li routerLink="/news">News</li>
+                <li routerLink="/careers">Careers</li>
+                <li (click)="openLg(content)">Contact Us</li>
             </ul>
         </div>
         <div class="col-12 col-lg-3">
@@ -55,10 +55,60 @@
         </div>
         <div class="breaking-line line-bottom col-12"></div>
         <div class="col-12 col-lg-6 text-left copyright">
-            <h5>Copyright © 2022 DRL. All rights reserved</h5>
+            <h5>Copyright © 2022 <span>DRL</span>. All rights reserved</h5>
         </div>
         <div class="col-12 col-lg-6 text-right copyright">
-            <h5>Powered by Jamil Alizada</h5>
+            <h5>Developed by <span>Jamil Alizada</span></h5>
         </div>
     </div>
 </footer>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Contact Us</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form action="" method="POST">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="First Name" required>
+                    <div class="underline"></div>
+                    <label for="">First Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Last Name" required>
+                    <div class="underline"></div>
+                    <label for="">Last Name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="email" name="Email" required>
+                    <div class="underline"></div>
+                    <label for="">Email Address</label>
+                </div>
+                <div class="input-data">
+                    <input type="phone" name="phone" required>
+                    <div class="underline"></div>
+                    <label for="">Phone Number</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" name="message" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Write your message</label>
+                    <br />
+                </div>
+            </div>
+            <div class="button-submit">
+                <button><input class="submit" type="submit" value="Submit"></button>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+</ng-template>
