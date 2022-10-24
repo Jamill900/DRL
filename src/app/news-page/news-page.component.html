@@ -18,7 +18,7 @@
                 placeholder="Search news"><i class="fa fa-search"></i>
         </div>
         <div class="row news-cards">
-            <div class="col-4 news-card" data-aos="fade-up" data-aos-duration="600"
+            <div class="col-12 col-lg-4 news-card" data-aos="fade-up" data-aos-duration="600"
                 *ngFor="let item of news | filter: searchText | paginate: {itemsPerPage: 6, currentPage: p}">
                 <img src="{{ item.cover }}" alt="">
                 <div class="news-caption">

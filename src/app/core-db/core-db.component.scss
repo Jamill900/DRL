@@ -1,0 +1,33 @@
+img {
+    width: 100%;
+}
+
+h6 {
+    color: var(--primary);
+    padding-top: 30px;
+}
+
+#technologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        max-height: 75px;
+        width: auto;
+        margin: 20px 0;
+    }
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 164%;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.slider {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}

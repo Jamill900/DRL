@@ -8,6 +8,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+product: any;
 
   constructor(private modalService: NgbModal, private router: Router) { }
 
@@ -29,6 +30,7 @@ export class HeaderComponent implements OnInit {
   openLg(content: any) {
     this.modalService.open(content, { size: 'lg' });
   }
+
 
   toggleNavBar() {
     let element: HTMLElement = document.getElementsByClassName('navbar-toggler')[0] as HTMLElement;

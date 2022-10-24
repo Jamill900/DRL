@@ -134,6 +134,7 @@ img {
     color: #848484;
     font-weight: 400;
     margin-top: 35px;
+    text-align: left;
 }
 
 .sec-title.light h2 {
@@ -241,6 +242,7 @@ button:hover {
     line-height: 26px;
     color: var(--dark-bg);
     font-weight: 400;
+    text-align: left;
 }
 
 .about-section .list-style-one {
@@ -276,7 +278,7 @@ button:hover {
     padding-bottom: 125px;
 }
 
-.about-section .image-column .inner-column:before {
+/* .about-section .image-column .inner-column:before {
     position: absolute;
     left: -75px;
     top: 65px;
@@ -284,7 +286,7 @@ button:hover {
     width: 520px;
     background-image: url(https://i.ibb.co/fxJ1jtC/about-circle-1.png);
     content: "";
-}
+} */
 
 .about-section .image-column .image-1 {
     position: relative;

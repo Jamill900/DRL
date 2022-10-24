@@ -27,6 +27,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from './search-pipe/ng2-filter.module';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CoreDbComponent } from './core-db/core-db.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutPageComponent,
     CareersPageComponent,
     NewsPageComponent,
-    AiqumComponent
+    AiqumComponent,
+    CoreDbComponent
   ],
   imports: [
     BrowserModule,

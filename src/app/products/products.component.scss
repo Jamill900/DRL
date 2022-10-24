@@ -84,6 +84,25 @@
         }
     }
 
+    #product1 {
+        position: relative;
+    }
+    
+    #product1 video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      z-index: 0;
+    }
+    
+    /* Just styling the content of the div, the *magic* in the previous rules */
+    #product1 .product-title {
+      z-index: 1;
+      position: relative;
+      text-align: center;
+    }
+
    
 
 

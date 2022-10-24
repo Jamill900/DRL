@@ -1,25 +1,46 @@
 <video id="bgvid" autoplay [muted]="true" loop src="assets/drl_bg.webm"></video>
 <section id="main" class="container">
+    <div style="height: 10px;"></div>
     <div>
         <h3>Latest Product</h3>
-        <h1 data-aos="fade-up" data-aos-duration="600">Welcome to <span>AI</span>QUM</h1>
-        <p data-aos="fade-up" data-aos-duration="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent
-            per conubia nostra.</p>
-        <button data-aos="fade-up" data-aos-duration="600" routerLink="/aiqum">Learn More</button>
+        <h1 data-aos="fade-up" data-aos-duration="600"><span>AI</span>QUM</h1>
+        <p data-aos="fade-up" data-aos-duration="600">Realtime Intelligent Sand Detection & Quantification Solution</p>
+        <button data-aos="fade-up" data-aos-duration="600" (click)="scrollToElement(aiqum)">Learn More</button>
     </div>
     <img src="assets/arrow_down.svg" alt="">
 </section>
-<div class="page-body-dark pt-4">
+<div class="page-body-dark pt-4" #aiqum>
     <div class="container m-auto row aiqum">
-        <div class="container heads-dark" data-aos="fade-up" data-aos-duration="600">
-            <h6 class="text-center">Who We Are</h6>
-            <h2 class="text-center">We are the experts of digital research</h2>
-            <p class="text-center m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-                tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.</p>
+        <div class="col-12 p-5">
+            <h2 class="text-center pb-3">The Concept.</h2>
+            <p>
+                Sand Production affects 50 % of global wells production leading to negative impact on the field
+                development economics a result of production losses followed by well remediation costs as well as
+                re-drilling a new well in during severe sanding events.
+                <br><br>
+                AIQUM (standing for AI as artificial intelligence and QUM as Sand in Azerbaijani language) is about
+                development of the cutting-edge technology aiming to change the energy industry. The key concept is
+                based on application of AI technologies on Big Data for detection and quantification of sand production
+                in wells. Novelty of the approach is about integration of Fiber Technology (i.e., Distributed Acoustic
+                Sensing - DAS) with nonintrusive Active Sensors (aka Ultrasonic), which simultaneously allows to
+                “listen” and send acoustic waves through the flowline for better representation of multiphase flow with
+                solid particles. By this, we also aim to mitigate the challenges of existing sand detection solutions in
+                low rate production wells.
+
+            </p>
         </div>
-        <div class="col-12 col-lg-6 p-5 mt-5 mb-5">
-            <h2>The Concept.</h2>
+        <img class="col-12" src="assets/aiqum1.png" alt="">
+        <div class="col-12 p-5">
+            <p>
+                This technology has been developing on flow loop facility manufactured since beginning of the project.
+                The real-time outcome of this product installed on BP AGT's assets will step up safe operations and
+                boost wells production expectancy. Technology is scalable to any asset where solids production becomes a
+                bottleneck for efficient operations.
+
+            </p>
+        </div>
+        <div class="col-12 p-5">
+            <h2 class="text-center p-5">The Lab.</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
                 tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.
@@ -28,30 +49,8 @@
                 nisi. Integer in felis sed leo vestibulum venenatis.
             </p>
         </div>
-        <img class="col-12 col-lg-6 mt-5 mb-5" src="assets/aiqum1.png" alt="">
-        <img class="col-12 col-lg-6 mt-5 mb-5" src="assets/aiqum2.png" alt="">
-        <div class="col-12 col-lg-6 p-5 mt-5 mb-5">
-            <h2>The Lab.</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-                tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.
-                <br><br>
-                Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate
-                nisi. Integer in felis sed leo vestibulum venenatis.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="page-body-light mt-5">
-    <div class="container row m-auto">
-        <div class="container heads-light" data-aos="fade-up" data-aos-duration="600">
-            <h6 class="text-center">Who We Are</h6>
-            <h2 class="text-center">We are the experts of digital research</h2>
-            <p class="text-center m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-                tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.</p>
-        </div>
-        <video class="col-8 m-auto mb-5" autoplay [muted]="true" loop src="assets/drl_lab.mp4" width="100%"
-            height="auto" style="max-width: 700px;"></video>
+        <video class="col-12" onmouseover="this.play()" onmouseout="this.pause();" [muted]="true"
+            loop src="assets/drl_lab.mp4" width="100%" height="auto" style="cursor: pointer;"></video>
     </div>
 </div>
 <app-apply></app-apply>
