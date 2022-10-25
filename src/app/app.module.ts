@@ -28,6 +28,8 @@ import { Ng2SearchPipeModule } from './search-pipe/ng2-filter.module';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreDbComponent } from './core-db/core-db.component';
+import { NewsDetailsComponent } from './news-details/news-details.component';
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 
 @NgModule({
   declarations: [
@@ -46,10 +48,12 @@ import { CoreDbComponent } from './core-db/core-db.component';
     CareersPageComponent,
     NewsPageComponent,
     AiqumComponent,
-    CoreDbComponent
+    CoreDbComponent,
+    NewsDetailsComponent
   ],
   imports: [
     BrowserModule,
+    NgxHideOnScrollModule,
     AppRoutingModule,
     NgxBeautifyCursorModule,
     HttpClientModule,

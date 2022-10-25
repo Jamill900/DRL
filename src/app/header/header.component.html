@@ -1,7 +1,7 @@
-<nav *ngIf="!showHeader('/aiqum')" class="navbar navbar-all backdrop-header navbar-expand-lg navbar-light">
+<nav *ngIf="!showHeader('/aiqum')" class="navbar navbar-all backdrop-header navbar-expand-lg navbar-light"
+    ngxHideOnScroll [classNameWhenHidden]="'nav--hidden'">
     <div class="container">
-        <a class="navbar-brand logo" routerLink="/home"><img src="assets/logo_drl.svg" alt=""
-                width="130px"></a>
+        <a class="navbar-brand logo" routerLink="/home"><img src="assets/logo_drl.svg" alt="" width="130px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -12,24 +12,25 @@
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/home"
                         [routerLinkActive]="['active']">Home</a>
                 </li>
-              <!--   <li class="nav-item">
+                <!--   <li class="nav-item">
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/services"
                         [routerLinkActive]="['active']">Services</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/home" fragment="products">Products</a>
+                    <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/home"
+                        fragment="products">Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/services"
                         [routerLinkActive]="['active']">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/news"
-                        [routerLinkActive]="['active']">News</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/careers"
                         [routerLinkActive]="['active']">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/news"
+                        [routerLinkActive]="['active']">News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/about"
@@ -43,10 +44,9 @@
     </div>
 </nav>
 
-<nav *ngIf="showHeader('/aiqum')" class="navbar navbar-aiqum backdrop-header navbar-expand-lg navbar-dark">
+<nav *ngIf="showHeader('/aiqum')" class="navbar navbar-aiqum backdrop-header navbar-expand-lg navbar-dark" >
     <div class="container">
-        <a class="navbar-brand logo" routerLink="/home"><img src="assets/drl_logo.svg" alt=""
-                width="130px"></a>
+        <a class="navbar-brand logo" routerLink="/home"><img src="assets/drl_logo.svg" alt="" width="130px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/home"
                         [routerLinkActive]="['active']">Home</a>
                 </li>
-              <!--   <li class="nav-item">
+                <!--   <li class="nav-item">
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/services"
                         [routerLinkActive]="['active']">Services</a>
                 </li> -->

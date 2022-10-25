@@ -40,8 +40,8 @@
             tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus.
         </p>
     </div>
-    <div class="team container">
-        <div class="team-card" *ngFor="let member of team" data-aos="fade-up" data-aos-duration="600">
+    <div class="team container row m-auto">
+        <div class="team-card col-12 col-md-6 col-lg-4" *ngFor="let member of team" data-aos="fade-up" data-aos-duration="600">
             <img src="{{ member.cover }}" alt="">
             <h3>{{ member.name }}</h3>
             <h6>{{ member.position }}</h6>

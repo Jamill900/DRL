@@ -128,6 +128,7 @@ nav.navbar-all {
         //background: rgba(0, 0, 0, 0.7) !important;
         //backdrop-filter: blur(12px) !important;
         background: var(--white);
+        position: fixed;
         z-index: 20;
         padding: 0;
     }
@@ -142,5 +143,20 @@ nav.navbar-all {
             margin: auto;
         }
     }
+
+    
 }
 
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 2rem;
+    transform: translateY(0);
+    transition: all .2s linear;
+  }
+  
+nav.nav--hidden {
+    transform: translateY(-100%);
+}

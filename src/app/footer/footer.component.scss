@@ -128,3 +128,15 @@ footer {
 .links li:hover {
     color: var(--primary);
 }
+
+@media (max-width: 991px) {
+    .text-right {
+        h5 {
+            float: none !important;
+        }
+    }
+
+    .links, .contacts {
+        margin: 20px 0;
+    }
+}

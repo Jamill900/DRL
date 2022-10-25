@@ -1,7 +1,7 @@
 <div class="page-body-dark" style="color: var(--white)">
     <div class="container pt-3 m-auto">
         <div class="slider">
-            <ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+            <ngb-carousel #carousel [interval]="2000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
                 (slide)="onSlide($event)">
                 <ng-template ngbSlide *ngFor="let img of images; index as i">
                     <div class="picsum-img-wrapper">
