@@ -29,7 +29,6 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreDbComponent } from './core-db/core-db.component';
 import { NewsDetailsComponent } from './news-details/news-details.component';
-import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 
 @NgModule({
   declarations: [
@@ -53,7 +52,6 @@ import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
   ],
   imports: [
     BrowserModule,
-    NgxHideOnScrollModule,
     AppRoutingModule,
     NgxBeautifyCursorModule,
     HttpClientModule,
