@@ -163,7 +163,6 @@ body {
     background: url('assets/product2.png');
     background-position: center;
     background-size: cover;
-    animation: magnify-reverse .2s linear forwards;
 }
 
 #core-db-header {
@@ -172,90 +171,61 @@ body {
     background-size: cover;
 }
 
-#product2:hover {
-    animation: magnify .2s linear forwards;
-}
-
-@keyframes magnify {
-    from {
-        background-size: 100%;
-    }
-    to {
-        background-size: 110%;
-    }
-}
-
-@keyframes magnify-reverse {
-    from {
-        background-size: 110%;
-    }
-    to {
-        background-size: 100%;
-    }
-}
-
 #careers-header {
-    background: url('assets/careers.png');
+    background: url('assets/headers/careers-header.png');
     background-position: center;
     background-size: cover;
 }
 
 #about-header {
-    background: url('assets/about-header.png');
+    background: url('assets/headers/about-header.png');
     background-position: center;
     background-size: cover;
 }
 
 #news-header {
-    background: url('assets/news-header.png');
-    background-position: center;
-    background-size: cover;
-}
-
-#product-header {
-    background: url('assets/product-header.png');
+    background: url('assets/headers/news-header.png');
     background-position: center;
     background-size: cover;
 }
 
 #service-header {
-    background: url('assets/service-header.png');
+    background: url('assets/headers/service-header.png');
     background-position: center;
     background-size: cover;
 }
 
 .service-one {
-    background: url('assets/service-one.jpg');
+    background: url('assets/services/service-one.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .service-two {
-    background: url('assets/service-two.jpg');
-    background-position: center;
+    background: url('assets/services/service-two.jpg');
     background-size: cover;
 }
 
 .service-three {
-    background: url('assets/service-three.jpg');
+    background: url('assets/services/service-three.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .button-one {
-    background: url('assets/service-one.jpg') !important;
+    background: url('assets/services/service-one.jpg') !important;
     background-position: center !important;
     background-size: cover !important;
 }
 
 .button-two {
-    background: url('assets/service-two.jpg') !important;
+    background: url('assets/services/service-two.jpg') !important;
     background-position: center !important;
     background-size: cover !important;
 }
 
 .button-three {
-    background: url('assets/service-three.jpg') !important;
+    background: url('assets/services/service-three.jpg') !important;
     background-position: center !important;
     background-size: cover !important;
 }

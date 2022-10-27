@@ -1,11 +1,10 @@
-<video id="bgvid" autoplay [muted]="true" loop src="assets/drl_bg.webm"></video>
+<video id="bgvid" autoplay [muted]="true" loop src="assets/videos/drl_bg.webm"></video>
 <section id="main" class="container">
     <div style="height: 10px;"></div>
     <div>
         <h3>Latest Product</h3>
         <h1 data-aos="fade-up" data-aos-duration="600"><span>AI</span>QUM</h1>
         <p data-aos="fade-up" data-aos-duration="600">Realtime Intelligent Sand Detection & Quantification Solution</p>
-        <button data-aos="fade-up" data-aos-duration="600" (click)="scrollToElement(aiqum)">Learn More</button>
     </div>
     <div class="scroll-down" (click)="scrollToElement(aiqum)">
         <div class="d-flex flex-row justify-content-center">
@@ -16,7 +15,7 @@
                 <circle cx="11" cy="10" r="5" fill="#F7A325" />
             </svg>
             <div>
-                <h5>Discover Our Products and Services</h5>
+                <h5>Learn more about AIQUM</h5>
                 <h6>Scroll Down</h6>
             </div>
         </div>
@@ -26,7 +25,7 @@
     <div class="container m-auto row aiqum">
         <div class="col-12 p-5">
             <h2 class="pb-3">The Concept.</h2>
-            <img class="concept-img" src="assets/aiqum1.png" alt="">
+            <img class="concept-img" src="assets/products/aiqum.jpg" alt="">
             <p>
                 Sand Production affects 50 % of global wells production leading to negative impact on the field
                 development economics a result of production losses followed by well remediation costs as well as
@@ -57,8 +56,8 @@
                 nisi. Integer in felis sed leo vestibulum venenatis.
             </p>
         </div>
-        <video class="col-12" onmouseover="this.play()" onmouseout="this.pause();" [muted]="true"
-            loop src="assets/drl_lab.mp4" width="100%" height="auto" style="cursor: pointer;"></video>
+        <video class="col-12 aiqum-video m-auto" autoplay [muted]="true" controls src="assets/videos/drl_lab_new.webm" height="auto"
+            style="cursor: pointer;"></video>
     </div>
 </div>
 <app-apply></app-apply>

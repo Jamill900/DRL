@@ -13,7 +13,7 @@ export class CoreDbComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  images = [1, 2, 3, 4, 5].map((n) => `assets/CoreDBPhoto${n}.png`);
+  images = [1, 2, 3, 4, 5].map((n) => `assets/products/CoreDBPhoto${n}.png`);
 
 	paused = false;
 	unpauseOnArrow = false;

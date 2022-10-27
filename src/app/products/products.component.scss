@@ -15,6 +15,7 @@
 
     .product-card {
         cursor: pointer;
+        height: 100vh !important;
     }
 
     h5 {
@@ -84,20 +85,22 @@
         }
     }
 
-    #product1 {
+    #product1, #product2 {
         position: relative;
     }
     
-    #product1 video {
+    #product1 video, #product2 video {
       width: 100%;
       height: 100%;
       position: absolute;
       object-fit: cover;
       z-index: 0;
     }
+
+    
     
     /* Just styling the content of the div, the *magic* in the previous rules */
-    #product1 .product-title {
+    #product1 .product-title, #product2 .product-title {
       z-index: 1;
       position: relative;
       text-align: center;
