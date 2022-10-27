@@ -62,3 +62,24 @@
         padding-top: 30px
     }
 }
+
+button {
+    display: grid;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 48px;
+    background: #efefef;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+button:hover {
+    transition: all .2s linear;
+    background: var(--dark-bg);
+    color: var(--primary);
+}

@@ -166,7 +166,7 @@ body {
 }
 
 #core-db-header {
-    background: url('assets/core-db-header.png');
+    background: url('assets/headers/core-db-header.png');
     background-position: center;
     background-size: cover;
 }
@@ -190,7 +190,7 @@ body {
 }
 
 #service-header {
-    background: url('assets/headers/service-header.png');
+    background: url('assets/headers/service-header.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -213,18 +213,37 @@ body {
 }
 
 .button-one {
-    background: url('assets/services/service-one.jpg') !important;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/services/service-one.jpg') !important;
     background-position: center !important;
     background-size: cover !important;
+    transition: all .5s linear;
 }
 
 .button-two {
-    background: url('assets/services/service-two.jpg') !important;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/services/service-two.jpg') !important;
     background-position: center !important;
     background-size: cover !important;
 }
 
 .button-three {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/services/service-three.jpg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.button-one:hover {
+    background: url('assets/services/service-one.jpg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.button-two:hover {
+    background: url('assets/services/service-two.jpg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.button-three:hover {
     background: url('assets/services/service-three.jpg') !important;
     background-position: center !important;
     background-size: cover !important;
@@ -316,8 +335,10 @@ pagination-template .ngx-pagination li.pagination-previous::before {
     font-weight: 600;
 }
 
-form {
-    padding: 30px 0 0 0;
+.modal-body p {
+    padding-left: 20px;
+    color: var(--dark-bg);
+    font-weight: 500;
 }
 
 form .form-row {

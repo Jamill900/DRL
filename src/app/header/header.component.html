@@ -43,7 +43,7 @@
     </div>
 </nav>
 
-<nav *ngIf="showHeader('/aiqum')" class="navbar navbar-aiqum backdrop-header navbar-expand-lg navbar-dark" >
+<nav *ngIf="showHeader('/aiqum')" class="navbar navbar-aiqum backdrop-header navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand logo" routerLink="/home"><img src="assets/drl_logo.svg" alt="" width="130px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -61,8 +61,8 @@
                         [routerLinkActive]="['active']">Services</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/products"
-                        [routerLinkActive]="['active']">Products</a>
+                    <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/home"
+                        fragment="products">Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-links" (click)="toggleNavBar()" routerLink="/services"
@@ -95,6 +95,10 @@
         <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
     </div>
     <div class="modal-body">
+        <p>
+            Thank you for your interest in DRL. Please provide the following details along with your message so we may
+            appropriately assist you.
+        </p>
         <form action="" method="POST">
             <div class="form-row">
                 <div class="input-data">
