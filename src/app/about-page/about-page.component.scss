@@ -27,6 +27,11 @@
     }
 }
 
+.industry {
+    background: #efefef;
+    padding: 40px 50px 40px 50px;
+}
+
 .profile {
     h5 {
         margin-bottom: 0;
@@ -125,7 +130,7 @@ button:hover {
   }
   
   /* Arrows */
-  .button:nth-child(1):after, .button:nth-child(2):after, .button:nth-child(3):after {
+  /* .button:nth-child(1):after, .button:nth-child(2):after, .button:nth-child(3):after {
     position: absolute;
     top: 43%;
     right: -18px;
@@ -144,7 +149,7 @@ button:hover {
   
   .button:nth-child(3):after {
     border-left: 20px solid #efefef;
-  }
+  } */
   
   /* Text Styles */
   
