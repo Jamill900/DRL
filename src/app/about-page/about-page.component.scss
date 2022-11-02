@@ -29,7 +29,16 @@
 
 .industry {
     background: #efefef;
-    padding: 40px 50px 40px 50px;
+    padding: 40px 0px 0px 0px;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
 }
 
 .profile {
@@ -85,7 +94,7 @@ button:hover {
   }
   
   #buttons {
-    max-width: 1300px;
+    //max-width: 1300px;
     margin: 30px auto;
     display: -webkit-box;
     display: -ms-flexbox;

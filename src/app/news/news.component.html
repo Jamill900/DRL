@@ -5,7 +5,7 @@
 
 <div class="container news">
     <div class="row justify-content-between">
-        <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="600" *ngFor="let item of news | paginate: {itemsPerPage: 3, currentPage: p}">
+        <div class="col-12 col-lg-6 news-card" data-aos="fade-up" data-aos-duration="600" *ngFor="let item of news | paginate: {itemsPerPage: 3, currentPage: p}">
             <img src="{{ item.cover }}" alt="">
             <div class="news-caption">
                 <h6>{{ item.date }}</h6>

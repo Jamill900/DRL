@@ -11,11 +11,16 @@ export class AboutPageComponent implements OnInit {
 
   team: Team[] = [];
   loading = false;
+  showLogos = false;
 
   constructor(private database: DatabaseService) { }
 
   ngOnInit(): void {
     this.getTeam();
+  }
+
+  toggleLogos() {
+    this.showLogos = !this.showLogos;
   }
 
   getTeam() {

@@ -1,21 +1,22 @@
 <div class="page-header" id="about-header">
     <div class="container">
         <h6>ABOUT US</h6>
-        <h1>Your partner in digital tranformation for Industry 4.0.</h1>
+        <h1>Your partner in digital transformation for Industry 4.0.</h1>
     </div>
 </div>
 <div class="page-body-light">
     <div class="container heads-light" data-aos="fade-up" data-aos-duration="600">
         <h6 class="text-center">Who We Are</h6>
-        <h2 class="text-center">We are the experts of digital research</h2>
+        <h2 class="text-center">Digital transformation ally</h2>
     </div>
     <div class="container row m-auto about-us" data-aos="fade-up" data-aos-duration="600">
         <p class="text-left col-lg-6 col-12 m-auto">
-            Digital Research Lab is a progressive R&D center that help our partners to realize ideas and transform their
-            companies by creating digital solutions with engineering ingenuity and innovative digital skills. We are
+            Digital Research Lab is a progressive R&D center that help its partners to realize ideas and transform their
+            companies by creating digital solutions with engineering ingenuity and innovative digital skills. DRL is
             thriving to become the leading digital enabler and an architect of digital transformation in the region by
             solving engineering and R&D problems that will empower organizations to sustain, expand and diversify their
-            market access or public impact. We work with key actors of the country in the Energy and Finance sectors.
+            market access or public impact. DRL team work with key actors of the country in the Energy and Finance
+            sectors.
         </p>
         <img class="col-lg-6 col-12 mt-3 mb-3" src="assets/team-building.jpg" alt="">
         <!-- <p class="text-left col-lg-6 col-12 m-auto" data-aos="fade-up" data-aos-duration="600">
@@ -37,7 +38,7 @@
     </div>
     <div class="container heads-light mt-5 industry" data-aos="fade-up" data-aos-duration="600">
         <h2 class="text-center">Industry <span style="color: var(--primary);">4.0</span></h2>
-        <p class="text-center" style="max-width:none; padding-bottom: 0">
+        <p class="text-center" style="max-width:none; padding:10px 50px 30px 50px">
             Industry 4.0 is revolutionizing the way companies manufacture, improve and distribute their products.
             Leading manufacturers are now realizing significant value from data and analytics, AI, and machine learning
             (ML) and pulling ahead in their efforts to implement Industry 4.0 across their manufacturing networks.
@@ -46,25 +47,22 @@
             Industry 4.0 concepts and technologies can be applied across all types of industrial companies, including
             discrete and process manufacturing, as well as oil and gas, mining and other industrial segments.
         </p>
-    </div>
-    <div class="container heads-light" data-aos="fade-up" data-aos-duration="600">
-        <h6 class="text-center">What We Do</h6>
-        <h2 class="text-center">Four directions</h2>
-    </div>
-    <div id="buttons">
-        <div class="button">
-            <p>Unlock the full potential of your resources and processes via digital solutions</p>
-        </div>
-        <div class="button">
-            <p>Gain unique insights into your operations and customers</p>
-        </div>
-        <div class="button">
-            <p>Stay relevant today and be prepared for tomorrow with digital products and processing power</p>
-        </div>
-        <div class="button">
-            <p>Re-invent the way end users experience your products or services</p>
+        <div id="buttons">
+            <div class="button">
+                <p>Unlock the full potential of your resources and processes via digital solutions</p>
+            </div>
+            <div class="button">
+                <p>Gain unique insights into your operations and customers</p>
+            </div>
+            <div class="button">
+                <p>Stay relevant today and be prepared for tomorrow with digital products and processing power</p>
+            </div>
+            <div class="button">
+                <p>Re-invent the way end users experience your products or services</p>
+            </div>
         </div>
     </div>
+    
     <div class="container heads-light" data-aos="fade-up" data-aos-duration="600">
         <h6 class="text-center">Our People</h6>
         <h2 class="text-center">Meet the team</h2>
@@ -91,5 +89,38 @@
         </div>
     </div>
     <button routerLink="/careers">Join Our Team</button>
+    <div class="container heads-light mt-5" data-aos="fade-up" data-aos-duration="600">
+        <h2 class="text-center">Technologies</h2>
+    </div>
+    <div class="technologies container row m-auto">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/Angular.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/TypeScript.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/DotNet.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/NodeJs.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/Azure.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/SQL.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/.netcore.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/Bootstrap.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/Csharp.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/C++.svg">
+        <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/CSS.svg">
+        <div *ngIf="showLogos == false" (click)="toggleLogos()" class="col-6 col-md-4 col-lg-2 load-more">Load More</div>
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/django.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/Figma.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/Git.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/GitHub.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/GitLab.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/HTML.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/Java.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/JavaScript.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/Keras.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/MaterialUI.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/PHP.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/PostgreSQL.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/Python.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/React.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/ScikitLearn.svg">
+        <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/TensorFlow.svg">
+    </div>
 </div>
 <app-apply></app-apply>
