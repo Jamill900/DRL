@@ -74,7 +74,14 @@
     <div class="team container row m-auto">
         <div class="team-card col-12 col-md-6 col-lg-4" *ngFor="let member of team" data-aos="fade-up"
             data-aos-duration="600">
-            <img src="{{ member.cover }}" alt="">
+            <div class="profile">
+                <div class="normal">
+                    <img src="{{ member.cover }}" alt="">
+                </div>
+                <div class="hovered">
+                    <img src="{{ member.cover2 }}" alt="">
+                </div>
+            </div>
             <h3>{{ member.name }}</h3>
             <h6>{{ member.position }}</h6>
             <div class="d-flex flex-row justify-content-center align-items-center profile"

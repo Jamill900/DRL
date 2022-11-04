@@ -4,9 +4,45 @@
         <h1>Making data available for everyone</h1>
     </div>
 </div>
-<div class="page-body-dark" style="color: var(--white)">
+<div class="page-body-light">
     <div class="container pt-3 m-auto">
-        <div id="technologies">
+        <h2 class="text-center p-3 challenge">Challenge</h2>
+        <p class="text-center" style="font-size: 18px;">
+            Core data plays an essential role in the decision-making process at different stages of the field
+            development of any oil and gas field.
+            <br><br>
+            The customers problem was that the available large volume of core data is stored in an unstructured manner
+            with no conventional naming practices scattered across the numerous folders of different technical
+            personnel. Unavailability of an integrated database created additional effort and inefficiency of
+            pre-conditioning, sorting and manual transfer of required data between different disciplines, which was
+            diminishing the potential value that core data could bring in.
+        </p>
+        <h5 class="text-center pt-5" style="color: var(--primary);"><b>PROJECT OBJECTIVES:</b></h5>
+        <div class="d-flex flex-lg-row flex-md-column justify-content-between align-items-start text-center pt-5">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 300px;">
+                <img src="assets/icons/approve.png" alt="" height="90px">
+                <h6><b>QUALITY</b></h6>
+                <p style="font-size: 16px; padding: 10px 0;">QC and expand existing Core database.</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 300px;">
+                <img src="assets/icons/award.png" alt="" height="90px">
+                <h6><b>UNIFORMITY</b></h6>
+                <p style="font-size: 16px; padding: 10px 0;">Establish core inventory structure and standards.</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 300px;">
+                <img src="assets/icons/develop.png" alt="" height="90px">
+                <h6><b>ACCESSIBILITY</b></h6>
+                <p style="font-size: 16px; padding: 10px 0;">Develop a web platform deployed on the customer’s servers
+                    making it readily available for all users.</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" style="width: 300px;">
+                <img src="assets/icons/startup.png" alt="" height="90px">
+                <h6><b>VALUE</b></h6>
+                <p style="font-size: 16px; padding: 10px 0;">Boost the value of core data by removing inefficiencies and
+                    additional effort required for pre-conditioning, sorting.</p>
+            </div>
+        </div>
+        <!-- <div id="technologies">
             <img src="assets/technologies/azure-core-db.svg" alt="" style="margin-right: 30px;">
             <img src="assets/technologies/python-core-db.svg" alt="" height="60px" style="margin-right: 30px;">
             <img src="assets/technologies/django-core-db.svg" alt="" height="60px" style="margin-right: 30px;">
@@ -58,7 +94,108 @@
                     </div>
                 </ng-template>
             </ngb-carousel>
+        </div> -->
+    </div>
+    <div class="solution mt-5 pt-3 pb-5">
+        <h2 class="text-center pt-5">Our Solution</h2>
+        <div class="container row m-auto">
+            <p class="col-12 text-center pt-2 pb-5">
+                At the pre-development stage, throughout close collaboration with the customer's technical and domain
+                knowledge specialists, our team:
+            </p>
+            <img class="col-12 col-lg-6" src="assets/products/CoreDb_Gif.gif" alt="">
+            <p class="col-12 col-lg-6">
+                <span>✓</span> Identified technical objectives and business needs.
+                <br><br>
+                <span>✓</span> Established nomenclature and conventions for different type of core measurements.
+                <br><br>
+                <span>✓</span> Set up the database architecture and business logics.
+            </p>
+            <p class="col-12 text-center pt-5 pb-5">
+                A fully automated web-based application with a user-friendly user interface was developed and deployed.
+                <br>
+                Alongside this, our team carried out an extensive QC and processing campaign of the existing data.
+            </p>
+            <p class="col-12 col-lg-6">
+                <b style="color: var(--primary);">The application features:</b>
+                <br><br>
+                <span>✓</span> Interactive pages dedicated for each core measurement group
+                <br><br>
+                <span>✓</span> Separate admin functionality that will enable subject matter data managers to maintain
+                the database
+                <br><br>
+                <span>✓</span> Integration with in house mapping platform (OneMap)
+            </p>
+            <img class="col-12 col-lg-6" src="assets/products/CoreDBPhoto2.jpg" alt="">
+            <h2 class="col-12 text-center pt-5 pb-5">Business Benefits</h2>
+            <img class="col-12 col-lg-6" src="assets/products/CoreDB3.png" alt="">
+            <p class="col-12 col-lg-6">
+                <span>✓</span> Readily accessible, well-sorted, fully standardized and validated core database from anywhere in the world.
+                <br><br>
+                <span>✓</span> Integration of different core measurements.
+                <br><br>
+                <span>✓</span> Potential to scale up to other regions and fields.
+            </p>
         </div>
+    </div>
+    <div class="container work-with-us">
+        <h3 class="text-center pt-5">Would you like to start a project with us <span>?</span></h3>
+        <button (click)="openLg(content)">GET IN TOUCH</button>
     </div>
 </div>
 <app-apply></app-apply>
+
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Contact Us</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <p>
+            Thank you for your interest in DRL. Please provide the following details along with your message so we may
+            appropriately assist you.
+        </p>
+        <form action="" method="POST">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="First Name" required>
+                    <div class="underline"></div>
+                    <label for="">First Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Last Name" required>
+                    <div class="underline"></div>
+                    <label for="">Last Name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="email" name="Email" required>
+                    <div class="underline"></div>
+                    <label for="">Email Address</label>
+                </div>
+                <div class="input-data">
+                    <input type="phone" name="phone" required>
+                    <div class="underline"></div>
+                    <label for="">Phone Number</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" name="message" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Write your message</label>
+                    <br />
+                </div>
+            </div>
+            <div class="button-submit">
+                <button><input class="submit" type="submit" value="Submit"></button>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+</ng-template>

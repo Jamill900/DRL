@@ -1,19 +1,19 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarousel, NgbModal, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-core-db',
-  templateUrl: './core-db.component.html',
-  styleUrls: ['./core-db.component.scss']
+	selector: 'app-core-db',
+	templateUrl: './core-db.component.html',
+	styleUrls: ['./core-db.component.scss']
 })
 export class CoreDbComponent implements OnInit {
 
-  constructor() { }
+	constructor(private modalService: NgbModal) { }
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
-  images = [1, 2, 3, 4, 5].map((n) => `assets/products/CoreDBPhoto${n}.jpg`);
+	images = [1, 2, 3, 4, 5].map((n) => `assets/products/CoreDBPhoto${n}.jpg`);
 
 	paused = false;
 	unpauseOnArrow = false;
@@ -30,6 +30,10 @@ export class CoreDbComponent implements OnInit {
 			this.carousel.pause();
 		}
 		this.paused = !this.paused;
+	}
+
+	openLg(content: any) {
+		this.modalService.open(content, { size: 'lg' });
 	}
 
 	onSlide(slideEvent: NgbSlideEvent) {

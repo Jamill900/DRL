@@ -35,60 +35,60 @@ export class InMemoryDataService implements InMemoryDbService {
 
       let team = [
           {
+              id: 1,
+              name: 'Vugar Bayramov',
+              position: 'Director',
+              link: 'https://www.linkedin.com/in/vugar-bayramov-55288558',
+              cover: 'assets/team/Vugar Bayramov.jpg',
+              cover2: 'assets/team/Vugar Bayramov 2.jpg'
+          },
+          {
+              id: 2,
+              name: 'German Krauklit',
+              position: 'Junior Researcher',
+              link: 'https://www.linkedin.com/in/german-krauklit/',
+              cover: 'assets/team/German Krauklit.jpg',
+              cover2: 'assets/team/German Krauklit 2.jpg'
+          },
+          {
               id: 3,
-              name: 'Vafa Dadashova',
-              position: 'Researcher',
-              link: 'https://www.linkedin.com/in/jamil-alizada-71281b1b7/',
-              cover: 'assets/team/vafa.jpg'
+              name: 'Kamran Niftaliyev',
+              position: 'Full-Stack Developer',
+              link: 'https://www.linkedin.com/in/niftaliyev/',
+              cover: 'assets/team/Kamran Niftaliyev.jpg',
+              cover2: 'assets/team/Kamran Niftaliyev 2.jpg'
+          },
+          {
+              id: 4,
+              name: 'Tapdig Abdullayev',
+              position: 'Front-End Developer',
+              link: 'https://www.linkedin.com/in/tapdiq-abdullayev',
+              cover: 'assets/team/Tapdig Abdullayev.jpg',
+              cover2: 'assets/team/Tapdig Abdullayev 2.jpg'
           },
           {
               id: 5,
-              name: 'Ruslan Malikov',
-              position: 'Junior Researcher',
-              link: 'https://www.linkedin.com/in/jamil-alizada-71281b1b7/',
-              cover: 'assets/team/ruslan.jpg'
+              name: 'Gunel Novruzova',
+              position: 'UX/UI Designer',
+              link: 'https://www.linkedin.com/in/gunel-novruzova-77689978',
+              cover: 'assets/team/Gunel Novruzova.jpg',
+              cover2: 'assets/team/Gunel Novruzova 2.jpg'
           },
           {
               id: 6,
-              name: 'Ramil Mamishov',
-              position: 'Junior Researcher',
-              link: 'https://www.linkedin.com/in/jamil-alizada-71281b1b7/',
-              cover: 'assets/team/ramil.jpg'
+              name: 'Ali Huseynov',
+              position: 'Back-End Developer',
+              link: 'https://www.linkedin.com/in/alihuseynov1/',
+              cover: 'assets/team/Ali Huseynov.jpg',
+              cover2: 'assets/team/Ali Huseynov 2.jpg'
           },
           {
               id: 7,
-              name: 'Gunel Rzayeva',
+              name: 'Aslan Rzayev',
               position: 'Junior Researcher',
-              link: 'https://www.linkedin.com/in/jamil-alizada-71281b1b7/',
-              cover: 'assets/team/gunel.jpg'
-          },
-          {
-              id: 8,
-              name: 'Elmir Abilov',
-              position: 'Junior Researcher',
-              link: 'https://www.linkedin.com/in/jamil-alizada-71281b1b7/',
-              cover: 'assets/team/elmir.jpg'
-          },
-          {
-              id: 9,
-              name: 'Tatyana Yeleskina',
-              position: 'Junior Researcher',
-              link: 'https://www.linkedin.com/in/jamil-alizada-71281b1b7/',
-              cover: 'assets/team/tatyana.jpg'
-          },
-          {
-              id: 10,
-              name: 'Fidan Karimova',
-              position: 'Research Assistant',
-              link: 'https://www.linkedin.com/in/jamil-alizada-71281b1b7/',
-              cover: 'assets/team/fidan.jpg'
-          },
-          {
-              id: 11,
-              name: 'Orkhan Mammadov',
-              position: 'Researcher',
-              link: 'https://www.linkedin.com/in/jamil-alizada-71281b1b7/',
-              cover: 'assets/team/orkhan.jpg'
+              link: 'https://www.linkedin.com/in/aslan-rzayev/',
+              cover: 'assets/team/Aslan Rzayev.jpg',
+              cover2: 'assets/team/Aslan Rzayev 2.jpg'
           }
       ]
 

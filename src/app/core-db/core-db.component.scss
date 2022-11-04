@@ -1,5 +1,14 @@
-img {
+/* img {
     width: 100%;
+} */
+
+.challenge {
+    font-weight: 700;
+    font-size: 35px;
+    background: linear-gradient(91.5deg, #F6907E 0%, #F7A325 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 
@@ -26,7 +35,6 @@ p {
     font-size: 20px;
     line-height: 164%;
     margin: auto;
-    color: #FFFFFF;
 }
 
 .slider {
@@ -46,3 +54,57 @@ p {
     background: var(--primary) !important;
     height: 3px !important;
 } */
+
+.solution {
+    background: var(--dark-bg);
+
+    h2 {
+        font-weight: 700;
+        font-size: 35px;
+        background: linear-gradient(91.5deg, #F6907E 0%, #F7A325 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    p {
+        color: var(--white);
+
+        span {
+            color: #64CE91;
+        }
+    }
+
+}
+
+.work-with-us {
+    button {
+        display: grid;
+        margin: auto;
+        margin-top: 50px;
+        padding: 20px 48px;
+        background: #efefef;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    
+    button:hover {
+        transition: all .2s linear;
+        background: var(--dark-bg);
+        color: var(--primary);
+    }
+
+    h3 {
+        text-transform: uppercase;
+
+        span {
+            color: var(--primary);
+        }
+    }
+}
+

@@ -4,4 +4,5 @@ export interface Team {
     position: string;
     link: string;
     cover: string;
+    cover2: string;
 }
