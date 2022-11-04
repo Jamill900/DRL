@@ -126,9 +126,18 @@
                 <br><br>
                 <span>✓</span> Integration with in house mapping platform (OneMap)
             </p>
-            <img class="col-12 col-lg-6" src="assets/products/CoreDBPhoto2.jpg" alt="">
+            <img class="col-12 col-lg-6" src="assets/products/CoreDB2.png" alt="">
             <h2 class="col-12 text-center pt-5 pb-5">Business Benefits</h2>
-            <img class="col-12 col-lg-6" src="assets/products/CoreDB3.png" alt="">
+            <div class="slider col-12 col-lg-6">
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                    (slide)="onSlide($event)">
+                    <ng-template ngbSlide *ngFor="let img of images; index as i">
+                        <div class="picsum-img-wrapper">
+                            <img [src]="img" alt="My image {{i + 1}} description" />
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
             <p class="col-12 col-lg-6">
                 <span>✓</span> Readily accessible, well-sorted, fully standardized and validated core database from anywhere in the world.
                 <br><br>

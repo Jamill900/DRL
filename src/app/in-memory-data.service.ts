@@ -39,56 +39,56 @@ export class InMemoryDataService implements InMemoryDbService {
               name: 'Vugar Bayramov',
               position: 'Director',
               link: 'https://www.linkedin.com/in/vugar-bayramov-55288558',
-              cover: 'assets/team/Vugar Bayramov.jpg',
-              cover2: 'assets/team/Vugar Bayramov 2.jpg'
+              cover: 'assets/team/Vugar Bayramov.png',
+              cover2: 'assets/team/Vugar Bayramov 2.png'
           },
           {
               id: 2,
               name: 'German Krauklit',
               position: 'Junior Researcher',
               link: 'https://www.linkedin.com/in/german-krauklit/',
-              cover: 'assets/team/German Krauklit.jpg',
-              cover2: 'assets/team/German Krauklit 2.jpg'
+              cover: 'assets/team/German Krauklit.png',
+              cover2: 'assets/team/German Krauklit 2.png'
           },
           {
               id: 3,
               name: 'Kamran Niftaliyev',
               position: 'Full-Stack Developer',
               link: 'https://www.linkedin.com/in/niftaliyev/',
-              cover: 'assets/team/Kamran Niftaliyev.jpg',
-              cover2: 'assets/team/Kamran Niftaliyev 2.jpg'
+              cover: 'assets/team/Kamran Niftaliyev.png',
+              cover2: 'assets/team/Kamran Niftaliyev 2.png'
           },
           {
               id: 4,
               name: 'Tapdig Abdullayev',
               position: 'Front-End Developer',
               link: 'https://www.linkedin.com/in/tapdiq-abdullayev',
-              cover: 'assets/team/Tapdig Abdullayev.jpg',
-              cover2: 'assets/team/Tapdig Abdullayev 2.jpg'
+              cover: 'assets/team/Tapdig Abdullayev.png',
+              cover2: 'assets/team/Tapdig Abdullayev 2.png'
           },
           {
               id: 5,
               name: 'Gunel Novruzova',
               position: 'UX/UI Designer',
               link: 'https://www.linkedin.com/in/gunel-novruzova-77689978',
-              cover: 'assets/team/Gunel Novruzova.jpg',
-              cover2: 'assets/team/Gunel Novruzova 2.jpg'
+              cover: 'assets/team/Gunel Novruzova.png',
+              cover2: 'assets/team/Gunel Novruzova 2.png'
           },
           {
               id: 6,
               name: 'Ali Huseynov',
               position: 'Back-End Developer',
               link: 'https://www.linkedin.com/in/alihuseynov1/',
-              cover: 'assets/team/Ali Huseynov.jpg',
-              cover2: 'assets/team/Ali Huseynov 2.jpg'
+              cover: 'assets/team/Ali Huseynov.png',
+              cover2: 'assets/team/Ali Huseynov 2.png'
           },
           {
               id: 7,
               name: 'Aslan Rzayev',
               position: 'Junior Researcher',
               link: 'https://www.linkedin.com/in/aslan-rzayev/',
-              cover: 'assets/team/Aslan Rzayev.jpg',
-              cover2: 'assets/team/Aslan Rzayev 2.jpg'
+              cover: 'assets/team/Aslan Rzayev.png',
+              cover2: 'assets/team/Aslan Rzayev 2.png'
           }
       ]
 
