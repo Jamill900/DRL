@@ -11,12 +11,12 @@
     </div>
     <div class="container row m-auto about-us" data-aos="fade-up" data-aos-duration="600">
         <p class="text-left col-lg-6 col-12 m-auto">
-            Digital Research Lab is a progressive R&D center that help its partners to realize ideas and transform their
-            companies by creating digital solutions with engineering ingenuity and innovative digital skills. DRL is
-            thriving to become the leading digital enabler and an architect of digital transformation in the region by
-            solving engineering and R&D problems that will empower organizations to sustain, expand and diversify their
-            market access or public impact. DRL team work with key actors of the country in the Energy and Finance
-            sectors.
+            Digital Research Lab is a progressive R&D center that helps its partners realize ideas and transform their
+            companies by creating digital solutions with engineering ingenuity and innovative digital skills.
+            <br><br>
+            We are thriving to become the leading digital enabler and an architect of digital transformation in the
+            region by solving engineering and R&D problems that will empower organizations to sustain, expand, and
+            diversify their market access or public impact. We work with key actors of the country in the Energy sector.
         </p>
         <img class="col-lg-6 col-12 mt-3 mb-3" src="assets/team-building.jpg" alt="">
         <!-- <p class="text-left col-lg-6 col-12 m-auto" data-aos="fade-up" data-aos-duration="600">
@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container heads-light" data-aos="fade-up" data-aos-duration="600">
         <h6 class="text-center">Our People</h6>
         <h2 class="text-center">Meet the team</h2>
@@ -84,7 +84,7 @@
             </div>
             <h3>{{ member.name }}</h3>
             <h6>{{ member.position }}</h6>
-            <div class="d-flex flex-row justify-content-center align-items-center profile"
+            <div class="d-flex flex-row justify-content-center align-items-center profile-link"
                 (click)="navigateTo(member.link)">
                 <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -97,9 +97,10 @@
     </div>
     <button routerLink="/careers">Join Our Team</button>
     <div class="container heads-light mt-5" data-aos="fade-up" data-aos-duration="600">
+        <h6 class="text-center">What We Use</h6>
         <h2 class="text-center">Technologies</h2>
     </div>
-    <div class="technologies container row m-auto">
+    <div class="technologies container row m-auto" data-aos="fade-up" data-aos-duration="600">
         <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/Angular.svg">
         <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/TypeScript.svg">
         <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/DotNet.svg">
@@ -111,7 +112,8 @@
         <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/Csharp.svg">
         <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/C++.svg">
         <img class="col-6 col-md-4 col-lg-2" src="assets/technologies/CSS.svg">
-        <div *ngIf="showLogos == false" (click)="toggleLogos()" class="col-6 col-md-4 col-lg-2 load-more">Load More</div>
+        <div *ngIf="showLogos == false" (click)="toggleLogos()" class="col-6 col-md-4 col-lg-2 load-more">Load More
+        </div>
         <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/django.svg">
         <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/Figma.svg">
         <img *ngIf="showLogos == true" class="col-6 col-md-4 col-lg-2" src="assets/technologies/Git.svg">

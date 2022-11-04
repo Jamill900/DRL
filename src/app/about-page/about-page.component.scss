@@ -31,6 +31,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
       img {
         height: 430px;
@@ -57,6 +58,7 @@
       .hovered {
         animation: profile-image .3s linear forwards;
       }
+      
 
       .normal {
         animation: profile-image-reverse .3s linear forwards;
@@ -88,7 +90,8 @@
   cursor: pointer;
 }
 
-.profile {
+.profile-link {
+  cursor: pointer;
     h5 {
         margin-bottom: 0;
         padding: 0 5px;

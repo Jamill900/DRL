@@ -89,6 +89,62 @@ export class InMemoryDataService implements InMemoryDbService {
               link: 'https://www.linkedin.com/in/aslan-rzayev/',
               cover: 'assets/team/Aslan Rzayev.png',
               cover2: 'assets/team/Aslan Rzayev 2.png'
+          },
+          {
+              id: 8,
+              name: 'Dashgin Khudiyev',
+              position: 'Back-End Developer',
+              link: 'https://www.linkedin.com/in/dashgin-khudiyev',
+              cover: 'assets/team/Dashgin Hudiyev.png',
+              cover2: 'assets/team/Dashgin Hudiyev 2.png'
+          },
+          {
+              id: 9,
+              name: 'Fuad Salim-zade',
+              position: 'Back-End Developer',
+              link: 'https://www.linkedin.com/in/fuad-salim-zade-4a632223a',
+              cover: 'assets/team/Fuad Zelimzade.png',
+              cover2: 'assets/team/Fuad Zelimzade 2.png'
+          },
+          {
+              id: 10,
+              name: 'Osman Mammadov',
+              position: 'Back-End Developer',
+              link: 'https://www.linkedin.com/in/osman-mamedov-6a120a212',
+              cover: 'assets/team/Osman Mammadov.png',
+              cover2: 'assets/team/Osman Mammadov 2.png'
+          },
+          {
+              id: 11,
+              name: 'Sabit Alizade',
+              position: 'Middle Front-End Developer',
+              link: 'https://www.linkedin.com/in/sabitalizade/',
+              cover: 'assets/team/Sabit Alizada 2.png',
+              cover2: 'assets/team/Sabit Alizada.png'
+          },
+          {
+              id: 12,
+              name: 'Teymur Rzali',
+              position: 'Research Assistant',
+              link: 'https://www.linkedin.com/in/teymurzali/',
+              cover: 'assets/team/Teymur Rzali.png',
+              cover2: 'assets/team/Teymur Rzali 2.png'
+          },
+          {
+              id: 13,
+              name: 'Yunis Huseynzada',
+              position: 'Research Assistant',
+              link: 'https://www.linkedin.com/in/yunisdev',
+              cover: 'assets/team/Yunis Huseynzada.png',
+              cover2: 'assets/team/Yunis Huseynzada 2.png'
+          },
+          {
+              id: 14,
+              name: 'Arif Khalaf',
+              position: 'Project Coordinator',
+              link: 'https://www.linkedin.com/in/arif-khalaf-6214b318a',
+              cover: 'assets/team/Arif Khalaf.png',
+              cover2: 'assets/team/Arif Khalaf 2.png'
           }
       ]
 
