@@ -11,7 +11,7 @@ export class InMemoryDataService implements InMemoryDbService {
               id: 0,
               name: 'Angular\nDeveloper',
               location: 'Baku, Azerbaijan',
-              link: 'https://forms.clickup.com/31136212/f/xp6em-2063/CHWZG24AES9N9RKYY2'
+              link: 'https://forms.clickup.com/31136212/f/xp6em-2163/XYZZR21MS4DHOEUMW9'
           },
           {
               id: 1,
@@ -119,8 +119,8 @@ export class InMemoryDataService implements InMemoryDbService {
               name: 'Sabit Alizade',
               position: 'Middle Front-End Developer',
               link: 'https://www.linkedin.com/in/sabitalizade/',
-              cover: 'assets/team/Sabit Alizada 2.jpg',
-              cover2: 'assets/team/Sabit Alizada.jpg'
+              cover: 'assets/team/Sabit Alizada.jpg',
+              cover2: 'assets/team/Sabit Alizada 2.jpg'
           },
           {
               id: 12,
