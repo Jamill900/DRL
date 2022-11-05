@@ -29,6 +29,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreDbComponent } from './core-db/core-db.component';
 import { NewsDetailsComponent } from './news-details/news-details.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { NewsDetailsComponent } from './news-details/news-details.component';
     NewsPageComponent,
     AiqumComponent,
     CoreDbComponent,
-    NewsDetailsComponent
+    NewsDetailsComponent,
+    SponsorsComponent
   ],
   imports: [
     BrowserModule,
