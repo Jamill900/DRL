@@ -24,7 +24,7 @@
 <div class="page-body-dark pt-4" #aiqum>
     <div class="container m-auto row aiqum">
         <div class="col-12 pt-5 pb-5">
-            <h2 class="pb-3">The Concept.</h2>
+            <h2 class="pb-3">Challenge</h2>
             <p>
                 The precipitation and deposition of solids are a major challenge in the production of oil and gas. Flow
                 assurance solids are formed because of unavoidable changes in temperature, pressure, and composition of
@@ -42,7 +42,7 @@
         <!-- <video class="col-12 col-lg-6 aiqum-video m-auto" autoplay [muted]="true" controls
         src="assets/videos/Drl_Lab_Assembly .webm" height="auto" style="cursor: pointer;"></video> -->
         <div class="col-12">
-            <h2>The Lab.</h2>
+            <h2>Our Solution</h2>
             <p>
                 This technology has been developed on a flow loop facility since the beginning of the project. The
                 real-time outcome of this product installed on BP AGT's assets will step up safe operations and boost
@@ -54,4 +54,63 @@
         <img class="concept-img col-12 col-lg-8 m-auto mt-5" src="assets/products/AIQUM_CONCEPT_SLIDE.gif" alt="">
     </div>
 </div>
+<div class="container work-with-us mb-5">
+    <h3 class="text-center pt-5">Would you like to start a project with us <span>?</span></h3>
+    <button (click)="openLg(content)">GET IN TOUCH</button>
+</div>
 <app-apply></app-apply>
+
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Contact Us</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <p>
+            Thank you for your interest in DRL. Please provide the following details along with your message so we may
+            appropriately assist you.
+        </p>
+        <form action="" method="POST">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" name="First Name" required>
+                    <div class="underline"></div>
+                    <label for="">First Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" name="Last Name" required>
+                    <div class="underline"></div>
+                    <label for="">Last Name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="email" name="Email" required>
+                    <div class="underline"></div>
+                    <label for="">Email Address</label>
+                </div>
+                <div class="input-data">
+                    <input type="phone" name="phone" required>
+                    <div class="underline"></div>
+                    <label for="">Phone Number</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" name="message" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Write your message</label>
+                    <br />
+                </div>
+            </div>
+            <div class="button-submit">
+                <button><input class="submit" type="submit" value="Submit"></button>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+</ng-template>

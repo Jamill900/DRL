@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import * as AOS from 'aos';
 
 @Component({
@@ -8,7 +9,7 @@ import * as AOS from 'aos';
 })
 export class AiqumComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
     AOS.init();
@@ -17,5 +18,9 @@ export class AiqumComponent implements OnInit {
   scrollToElement(element: any): void {
     element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
+
+  openLg(content: any) {
+		this.modalService.open(content, { size: 'lg' });
+	}
 
 }
