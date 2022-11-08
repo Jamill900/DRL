@@ -5,8 +5,9 @@
     <div class="row">
         <div class="col-12 col-lg-6 product-card d-flex justify-content-center align-items-center text-center"
             id="product1" routerLink="/aiqum">
-            <video onmouseover="this.play()" onmouseout="this.pause();" id="bgvid" [muted]="true" loop
-                src="assets/videos/drl_bg.webm"></video>
+            <video onmouseover="this.play()" onmouseout="this.pause();" id="bgvid" [muted]="true" loop>
+                <source src="assets/videos/drl_bg.webm" type="video/mp4">
+            </video>
             <div class="product-title">
                 <h5>AIQUM</h5>
                 <button routerLink="/aiqum">Go to product</button>
@@ -14,7 +15,9 @@
         </div>
         <div class="col-12 col-lg-6 product-card d-flex justify-content-center align-items-center text-center"
             id="product2" routerLink="/core-db">
-            <video onmouseover="this.play()" onmouseout="this.pause();"  [muted]="true" loop src="assets/videos/CoreDB_Bg.webm"></video>
+            <video onmouseover="this.play()" onmouseout="this.pause();" id="bgvid"  [muted]="true" loop>
+                <source src="assets/videos/CoreDB_Bg.webm" type="video/mp4">
+            </video>
             <div class="product-title">
                 <h5>CoreDB</h5>
                 <button routerLink="/core-db">Go to Case</button>

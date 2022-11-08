@@ -9,8 +9,9 @@
     #product1,
     #product2 {
         height: 572px;
-        padding: 50px;
-        z-index: 20
+        z-index: 20;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .product-card {
@@ -97,9 +98,6 @@
       z-index: 0;
     }
 
-    
-    
-    /* Just styling the content of the div, the *magic* in the previous rules */
     #product1 .product-title, #product2 .product-title {
       z-index: 1;
       position: relative;
