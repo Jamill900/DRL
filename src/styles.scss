@@ -22,14 +22,15 @@ body {
 }
 
 #bgvid {
-    z-index: 25;
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    filter: brightness(45%);
+	z-index: 0 !important;
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+	filter: brightness(65%);
 }
 
 .section-heading-dark {
