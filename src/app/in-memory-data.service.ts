@@ -152,7 +152,7 @@ export class InMemoryDataService implements InMemoryDbService {
         {
           id: 1,
           cover: 'assets/news/news2.png',
-          title: 'CoreDB 2.0 is developed and deployed for two major hydrocarbon fields in SCP',
+          title: 'CoreDB 2.0 is developed and deployed for two major hydrocarbon fields in SCB',
           info: 'A new updated version of the CoreDB web application was introduced for the Azeri-Chirag-Gunashli (ACG) and Shah Deniz (SD) fields located in the South Caspian Basin. Our team focused on the optimization of several existing features and development of new functionalities based on the feedback received from the customer:\n\n· Fully reworked the numerical table page with more focus on the advance data manipulation and analytics features.\n\n· New notification system between users and admins, that will update users regarding any additions to the database.\n\n· Integration to the customer’s inhouse mapping platform (OneMap). An interactive maps integrated with the data inventory tables.\n\n· Add a new well functionality that ensures seamless introduction of new wells and their data\n\n· Optimized Image, Report and CT Scan Pages.',
           date: '1 September 2022'
         },

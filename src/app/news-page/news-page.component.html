@@ -15,7 +15,7 @@
                 *ngFor="let item of news | filter: searchText | paginate: {itemsPerPage: 6, currentPage: p}">
                 <img src="{{ item.cover }}" alt="">
                 <div class="news-caption">
-                    <h6>{{ item.date }}</h6>
+                    <h6><br>{{ item.date }}</h6>
                     <h3>{{ item.title }}
                     </h3>
                     <div routerLink="/news/{{ item.id }}" class="read-more">
