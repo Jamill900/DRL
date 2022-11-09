@@ -1,7 +1,7 @@
 <div class="page-body-light" style="color: var(--dark-bg)">
     <div *ngIf="news" class="container news">
         <img [src]="news.cover" width="auto" data-aos="fade-left" data-aos-duration="600">
-        <span data-aos="fade-right" data-aos-duration="600">{{ news.date }}</span>
+        <span data-aos="fade-right" data-aos-duration="600"><br>{{ news.date }}</span>
         <h2 data-aos="fade-right" data-aos-duration="600">{{ news.title }}</h2>
         <p data-aos="fade-right" data-aos-duration="600">{{ news.info }}</p>
     </div>
