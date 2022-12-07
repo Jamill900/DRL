@@ -63,7 +63,7 @@
     </div>
 </footer>
 
-<ng-template #content let-modal>
+<!-- <ng-template #content let-modal>
     <div class="modal-header">
         <h4 class="modal-title">Contact Us</h4>
         <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
@@ -73,7 +73,7 @@
             Thank you for your interest in DRL. Please provide the following details along with your message so we may
             appropriately assist you.
         </p>
-        <form target="_blank" action="https://formsubmit.co/alizada.abu@gmail.com" method="POST">
+        <form method="POST" target="_blank" action="https://formsubmit.co/jamil.aliyev900@gmail.com">
             <div class="form-row">
                 <div class="input-data">
                     <input type="text" name="First Name" required>
@@ -115,4 +115,54 @@
     <div class="modal-footer">
         <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
     </div>
-</ng-template>
+</ng-template> -->
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Contact Us</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <form ngNoForm target="_blank" action="https://formsubmit.co/abu.alizade96@gmail.com" method="POST">
+        <div class="form-row">
+          <div class="input-data">
+            <input type="text" name="First Name" required>
+            <div class="underline"></div>
+            <label for="">First Name</label>
+          </div>
+          <div class="input-data">
+            <input type="text" name="Last Name" required>
+            <div class="underline"></div>
+            <label for="">Last Name</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-data">
+            <input type="email" name="Email" required>
+            <div class="underline"></div>
+            <label for="">Email Address</label>
+          </div>
+          <div class="input-data">
+            <input type="phone" name="phone" required>
+            <div class="underline"></div>
+            <label for="">Phone Number</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-data textarea">
+            <textarea rows="8" cols="80" name="message" required></textarea>
+            <br />
+            <div class="underline"></div>
+            <label for="">Write your message</label>
+            <br />
+          </div>
+        </div>
+        <div class="button-submit">
+          <button><input class="submit" type="submit" value="Submit"></button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </ng-template>
