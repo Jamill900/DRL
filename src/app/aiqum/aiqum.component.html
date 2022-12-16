@@ -34,12 +34,6 @@
                 the oil-gas-water flowstream, from reservoir conditions to processing conditions. The advent of subsea
                 production and the increased exploitation of heavy crudes have made flow assurance issues dominant in
                 ensuring efficient and safe exploitation of hydrocarbon assets.
-                <br><br>
-                AIQUM (standing for "AI" as artificial intelligence and "QUM" as "Sand" in Azerbaijani language) is a
-                breakthrough surveillance system approach using real-time high frequency working technology, providing
-                sand production alerts every millisecond. Using advanced ultrasonic and fiber-optic (i.e., Distributed
-                Acoustic Sensing - DAS) sensors with AI algorithms, it provides operators with real-time data for solid
-                production identification and quantification.
             </p>
         </div>
         <!-- <video class="col-12 col-lg-6 aiqum-video m-auto" autoplay [muted]="true" controls
@@ -47,17 +41,41 @@
         <div class="col-12">
             <h2>Our Solution</h2>
             <p>
-                This technology has been developed on a flow loop facility since the beginning of the project. The
-                real-time outcome of this product installed on BP AGT's assets will step up safe operations and boost
-                well production expectancy. Technology is scalable to any asset where solid production becomes a
-                bottleneck for operation efficiency.
+                AIQUM (standing for "AI" as artificial intelligence and "QUM" as "Sand" in Azerbaijani language) is a
+                breakthrough surveillance system approach using real-time high frequency working technology, providing
+                sand production alerts every millisecond. Using advanced ultrasonic and fiber-optic (i.e., Distributed
+                Acoustic Sensing - DAS) sensors with AI algorithms, it provides operators with real-time data for solid
+                production identification and quantification.
             </p>
         </div>
 
-            <iframe class="concept-img col-12 col-lg-8 m-auto mt-5" width="560" height="415" src="https://www.youtube.com/embed/9h496Fzbm5g"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <iframe class="concept-img col-12 col-lg-8 m-auto mt-5 mb-5" width="560" height="415"
+            src="https://www.youtube.com/embed/9h496Fzbm5g" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <div class="col-12">
+            <h2>The Lab</h2>
+            <p>
+                AIQUM (standing for "AI" as artificial intelligence and "QUM" as "Sand" in Azerbaijani language) is a
+                breakthrough surveillance system approach using real-time high frequency working technology, providing
+                sand production alerts every millisecond. Using advanced ultrasonic and fiber-optic (i.e., Distributed
+                Acoustic Sensing - DAS) sensors with AI algorithms, it provides operators with real-time data for solid
+                production identification and quantification.
+            </p>
+        </div>
+
+        <div class="slider col-12 col-lg-6 m-auto mt-3">
+            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                (slide)="onSlide($event)">
+                <ng-template ngbSlide *ngFor="let img of images; index as i">
+                    <div class="picsum-img-wrapper">
+                        <img [src]="img" alt="My image {{i + 1}} description" />
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
     </div>
 </div>
 <div class="container work-with-us mb-5">
