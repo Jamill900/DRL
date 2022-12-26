@@ -54,6 +54,10 @@ h1 {
     text-align: left;
     letter-spacing: 0.04em;
     text-transform: capitalize;
+
+    span {
+        color: var(--primary);
+    }
 }
 
 p {

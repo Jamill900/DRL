@@ -1,6 +1,6 @@
 <video autoplay [muted]="true" loop playsinline preload="auto" onloadedmetadata="this.muted = true" id="bgvid"
     poster="assets/videos/aiqum_poster.jpg">
-    <source src="/assets/videos/drl_bg.mp4" type="video/mp4">
+    <source src="/assets/videos/aiqum_bg.mp4" type="video/mp4">
 </video>
 <section id="main" class="container">
     <div style="height: 10px;"></div>
@@ -26,7 +26,7 @@
 </section>
 <div class="page-body-dark pt-4" #aiqum>
     <div class="container m-auto row aiqum">
-        <div class="col-12 pt-5 pb-5">
+        <div class="col-12 pt-5 pb-3">
             <h2 class="pb-3">Challenge</h2>
             <p>
                 The precipitation and deposition of solids are a major challenge in the production of oil and gas. Flow
@@ -38,8 +38,8 @@
         </div>
         <!-- <video class="col-12 col-lg-6 aiqum-video m-auto" autoplay [muted]="true" controls
         src="assets/videos/Drl_Lab_Assembly .webm" height="auto" style="cursor: pointer;"></video> -->
-        <div class="col-12">
-            <h2>Our Solution</h2>
+        <div class="col-12 pb-5">
+            <h2 class="pb-3">Our Solution</h2>
             <p>
                 AIQUM (standing for "AI" as artificial intelligence and "QUM" as "Sand" in Azerbaijani language) is a
                 breakthrough surveillance system approach using real-time high frequency working technology, providing
@@ -49,13 +49,7 @@
             </p>
         </div>
 
-        <iframe class="concept-img col-12 col-lg-8 m-auto mt-5 mb-5" width="560" height="415"
-            src="https://www.youtube.com/embed/9h496Fzbm5g" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-
-        <div class="col-12">
+        <div class="col-12 col-lg-5">
             <h2>The Lab</h2>
             <p>
                 This technology has been developed on a flow loop facility since the beginning of the project. The
@@ -65,7 +59,7 @@
             </p>
         </div>
 
-        <div class="slider col-12 col-lg-6 m-auto mt-3">
+        <div class="slider col-12 col-lg-7 m-auto mt-3">
             <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
                 (slide)="onSlide($event)">
                 <ng-template ngbSlide *ngFor="let img of images; index as i">
@@ -86,54 +80,50 @@
 
 <ng-template #content let-modal>
     <div class="modal-header">
-        <h4 class="modal-title">Contact Us</h4>
-        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+      <h4 class="modal-title">Contact Us</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
     </div>
     <div class="modal-body">
-        <p>
-            Thank you for your interest in DRL. Please provide the following details along with your message so we may
-            appropriately assist you.
-        </p>
-        <form action="" method="POST">
-            <div class="form-row">
-                <div class="input-data">
-                    <input type="text" name="First Name" required>
-                    <div class="underline"></div>
-                    <label for="">First Name</label>
-                </div>
-                <div class="input-data">
-                    <input type="text" name="Last Name" required>
-                    <div class="underline"></div>
-                    <label for="">Last Name</label>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="input-data">
-                    <input type="email" name="Email" required>
-                    <div class="underline"></div>
-                    <label for="">Email Address</label>
-                </div>
-                <div class="input-data">
-                    <input type="phone" name="phone" required>
-                    <div class="underline"></div>
-                    <label for="">Phone Number</label>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="input-data textarea">
-                    <textarea rows="8" cols="80" name="message" required></textarea>
-                    <br />
-                    <div class="underline"></div>
-                    <label for="">Write your message</label>
-                    <br />
-                </div>
-            </div>
-            <div class="button-submit">
-                <button><input class="submit" type="submit" value="Submit"></button>
-            </div>
-        </form>
+      <form ngNoForm target="_blank" action="https://formsubmit.co/abu.alizade96@gmail.com" method="POST">
+        <div class="form-row">
+          <div class="input-data">
+            <input type="text" name="First Name" required>
+            <div class="underline"></div>
+            <label for="">First Name</label>
+          </div>
+          <div class="input-data">
+            <input type="text" name="Last Name" required>
+            <div class="underline"></div>
+            <label for="">Last Name</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-data">
+            <input type="email" name="Email" required>
+            <div class="underline"></div>
+            <label for="">Email Address</label>
+          </div>
+          <div class="input-data">
+            <input type="phone" name="phone" required>
+            <div class="underline"></div>
+            <label for="">Phone Number</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-data textarea">
+            <textarea rows="8" cols="80" name="message" required></textarea>
+            <br />
+            <div class="underline"></div>
+            <label for="">Write your message</label>
+            <br />
+          </div>
+        </div>
+        <div class="button-submit">
+          <button><input class="submit" type="submit" value="Submit"></button>
+        </div>
+      </form>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
     </div>
-</ng-template>
+  </ng-template>

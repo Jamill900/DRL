@@ -21,6 +21,10 @@
 
     h5 {
         font-size: 50px;
+
+        span {
+            color: var(--primary);
+        }
     }
 
     h6 {
@@ -81,30 +85,34 @@
         from {
             opacity: 0;
         }
+
         to {
             opacity: 1;
         }
     }
 
-    #product1, #product2 {
+    #product1,
+    #product2 {
         position: relative;
     }
-    
-    #product1 video, #product2 video {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      object-fit: cover;
-      z-index: 0;
+
+    #product1 video,
+    #product2 video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: 0;
     }
 
-    #product1 .product-title, #product2 .product-title {
-      z-index: 1;
-      position: relative;
-      text-align: center;
+    #product1 .product-title,
+    #product2 .product-title {
+        z-index: 1;
+        position: relative;
+        text-align: center;
     }
 
-   
+
 
 
 

@@ -15,7 +15,7 @@ export class AiqumComponent implements OnInit {
     AOS.init();
   }
 
-  images = [1, 2, 3, 4].map((n) => `assets/products/AiQum_${n}.jpg`);
+  images = [1, 2, 3].map((n) => `assets/products/AiQum_${n}.jpg`);
 
 	paused = false;
 	unpauseOnArrow = false;
