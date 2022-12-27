@@ -3,19 +3,19 @@ import { NgbCarousel, NgbModal, NgbSlideEvent, NgbSlideEventSource } from '@ng-b
 import * as AOS from 'aos';
 
 @Component({
-  selector: 'app-aiqum',
-  templateUrl: './aiqum.component.html',
-  styleUrls: ['./aiqum.component.scss']
+	selector: 'app-aiqum',
+	templateUrl: './aiqum.component.html',
+	styleUrls: ['./aiqum.component.scss']
 })
 export class AiqumComponent implements OnInit {
 
-  constructor(private modalService: NgbModal) { }
+	constructor(private modalService: NgbModal) { }
 
-  ngOnInit(): void {
-    AOS.init();
-  }
+	ngOnInit(): void {
+		AOS.init();
+	}
 
-  images = [1, 2, 3].map((n) => `assets/products/AiQum_${n}.jpg`);
+	images = [1, 2, 3].map((n) => `assets/products/AiQum_${n}.jpg`);
 
 	paused = false;
 	unpauseOnArrow = false;
@@ -23,7 +23,7 @@ export class AiqumComponent implements OnInit {
 	pauseOnHover = true;
 	pauseOnFocus = true;
 
-  @ViewChild('carousel', { static: true }) carousel: NgbCarousel;
+	@ViewChild('carousel', { static: true }) carousel: NgbCarousel;
 
 	togglePaused() {
 		if (this.paused) {
@@ -34,15 +34,19 @@ export class AiqumComponent implements OnInit {
 		this.paused = !this.paused;
 	}
 
-  scrollToElement(element: any): void {
-    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
+	scrollToElement(element: any): void {
+		element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+	}
 
-  openLg(content: any) {
+	openLg(content: any) {
 		this.modalService.open(content, { size: 'lg' });
 	}
 
-  onSlide(slideEvent: NgbSlideEvent) {
+	navigateTo(url: string) {
+		window.open(url, '_blank');
+	}
+
+	onSlide(slideEvent: NgbSlideEvent) {
 		if (
 			this.unpauseOnArrow &&
 			slideEvent.paused &&

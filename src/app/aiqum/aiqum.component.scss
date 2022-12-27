@@ -61,7 +61,6 @@
         text-align: center;
         width: 163px;
         height: 52px;
-        border-radius: 5px;
         // background: linear-gradient(92.18deg, #F6907E -10.89%, #F7A325 83.72%);
         //background: var(--primary);
         margin-top: 20px;
@@ -76,7 +75,7 @@
         text-decoration: none;
         cursor: pointer;
     }
-
+    
     button:hover {
         transition: all linear .05s;
         background: #F7A325;
