@@ -117,3 +117,14 @@
 
 
 }
+
+#coredb {
+	z-index: 0 !important;
+	width: 100vw;
+	height: 100vh;
+	position: absolute !important;
+	top: 0;
+	right: 0;
+	z-index: -9999;
+	filter: brightness(65%);
+}
