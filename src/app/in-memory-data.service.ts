@@ -18,13 +18,13 @@ export class InMemoryDataService implements InMemoryDbService {
               name: 'Student Research\nAssistant',
               location: 'Baku, Azerbaijan',
               link: 'https://forms.clickup.com/31136212/f/xp6em-2303/L5QXEEBL3EDEPW944A'
-          }/* ,
+          },
           {
               id: 3,
-              name: 'General\nApplication',
+              name: 'Graduate Petroleum\nEngineer',
               location: 'Baku, Azerbaijan',
-              link: 'https://forms.clickup.com/31136212/f/xp6em-2303/L5QXEEBL3EDEPW944A'
-          } */
+              link: 'https://forms.clickup.com/31136212/f/xp6em-2423/A6MKNTETY4YJOYGXNJ'
+          }
       ];
 
       let team = [
