@@ -133,6 +133,14 @@ export class InMemoryDataService implements InMemoryDbService {
                 link: 'https://www.linkedin.com/in/arif-khalaf-6214b318a',
                 cover: 'assets/team/Arif Khalaf.jpg',
                 cover2: 'assets/team/Arif Khalaf 2.jpg'
+            },
+            {
+              id: 15,
+              name: 'Aytan Ibrahimova',
+              position: 'UX/UI Designer',
+              link: 'https://www.linkedin.com/in/aytanibrahimova/',
+              cover: 'assets/team/Aytan Ibrahimova.jpg',
+              cover2: 'assets/team/Aytan Ibrahimova 2.jpg'
             }
         ]
 
