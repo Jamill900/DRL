@@ -140,3 +140,12 @@ footer {
         margin: 20px 0;
     }
 }
+
+svg {
+  fill: #818181;
+  transition: all .2s linear;
+}
+
+svg:hover {
+  fill: var(--primary) !important;
+}

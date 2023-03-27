@@ -18,4 +18,8 @@ export class FooterComponent implements OnInit {
   openLg(content: any) {
     this.modalService.open(content, { size: 'lg' });
   }
+
+  navigateTo(url: string) {
+    window.open(url, 'target: _blank');
+  }
 }

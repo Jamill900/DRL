@@ -55,12 +55,13 @@
                 industry. We are always keen to meet fresh talents, so check out our vacancies.
             </p>
         </div>
-        <div class="container m-auto vacancies">
-            <div class="vacancy mb-5 m-auto" *ngFor="let career of careers" (click)="navigateTo(career.link)"
+        <div class="container m-auto">
+            <!-- <div class="vacancy mb-5 m-auto" *ngFor="let career of careers" (click)="navigateTo(career.link)"
                 data-aos="fade-up" data-aos-duration="600">
                 <h4>{{ career.name }}</h4>
                 <h6>{{ career.location }}</h6>
-            </div>
+            </div> -->
+            <h3 class="text-center">Currently<span style="color: var(--primary)">,</span> we do not have any available <br><br> job openings to offer at this time<span style="color: var(--primary)">.</span></h3>
         </div>
     </div>
     <button routerLink="/about">More about DRL</button>
