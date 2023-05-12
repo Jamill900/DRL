@@ -1,9 +1,17 @@
 .vacancies {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
     align-items: center;
 }
+
+@media screen and (max-width: 1400px) {
+
+  .vacancies {
+      grid-template-columns: auto auto auto;
+  }
+}
+
 @media screen and (max-width: 980px) {
 
     .vacancies {
@@ -32,6 +40,7 @@
         font-size: 18px;
         padding-bottom: 10px;
         white-space: pre-line;
+        line-height: 25px;
     }
 
     h6 {
