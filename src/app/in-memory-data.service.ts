@@ -24,12 +24,6 @@ export class InMemoryDataService implements InMemoryDbService {
         name: 'Front End\nDeveloper',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2943/ZDKA1I9QXETHGWNJPX'
-      },
-      {
-        id: 3,
-        name: 'Full Stack\nDeveloper',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-2963/UVATMJDJD29FXCGETT'
       }
 
     ];
