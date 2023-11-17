@@ -26,10 +26,16 @@ export class InMemoryDataService implements InMemoryDbService {
         link: 'https://forms.clickup.com/31136212/f/xp6em-2943/ZDKA1I9QXETHGWNJPX'
       },
       {
-        id: 2,
+        id: 3,
         name: 'Junior Data\nScientist',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-3164/Y5TQ525CJUGO2A8A7P'
+      },
+      {
+        id: 3,
+        name: 'ASP.NET Core\nDeveloper',
+        location: 'Baku, Azerbaijan',
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3287/52YVZFG75G4EJRCDPJ'
       }
 
     ];
