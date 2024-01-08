@@ -20,7 +20,7 @@ export class InMemoryDataService implements InMemoryDbService {
         link: 'https://forms.clickup.com/31136212/f/xp6em-2923/SAKO77XHNO3DHQD7UM'
       },
       {
-        id: 3,
+        id: 2,
         name: 'Junior Data\nScientist',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-3164/Y5TQ525CJUGO2A8A7P'
@@ -30,6 +30,36 @@ export class InMemoryDataService implements InMemoryDbService {
         name: 'ASP.NET Core\nDeveloper',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-3287/52YVZFG75G4EJRCDPJ'
+      },
+      {
+        id: 4,
+        name: 'Junior Frontend\nReact Developer',
+        location: 'Baku, Azerbaijan',
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3342/FSOCQ3AANHM8VCO124'
+      },
+      {
+        id: 5,
+        name: 'Senior .NET\nDeveloper',
+        location: 'Baku, Azerbaijan',
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3402/VT8M8CQNIKM6RLE5QF'
+      },
+      {
+        id: 6,
+        name: 'Junior QA\nTester',
+        location: 'Baku, Azerbaijan',
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3422/QP0A3D75YV42MGS38G'
+      },
+      {
+        id: 7,
+        name: 'Business Analyst\nProject Manager',
+        location: 'Baku, Azerbaijan',
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3462/3XYPO6EFZDVI1VYSHK'
+      },
+      {
+        id: 8,
+        name: 'Data\nScientist',
+        location: 'Baku, Azerbaijan',
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3502/29VETVTN64QRJTQCKH'
       }
 
     ];
