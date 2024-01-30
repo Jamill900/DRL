@@ -9,36 +9,12 @@ export class InMemoryDataService implements InMemoryDbService {
     let careers = [
       {
         id: 0,
-        name: 'Graduate Petroleum\nEngineer',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-2423/A6MKNTETY4YJOYGXNJ'
-      },
-      {
-        id: 4,
-        name: 'Junior Frontend\nReact Developer',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-3362/LHMM5747YU5T6XGXT5'
-      },
-      {
-        id: 5,
-        name: 'Senior .NET\nDeveloper',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-3382/G9IRH8UNDIJUEDPV11'
-      },
-      {
-        id: 6,
-        name: 'Junior QA\nTester',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-3442/9E9HDWCSVORT61CL1K'
-      },
-      {
-        id: 7,
         name: 'Business Analyst\nProject Manager',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-3482/REK1RIQKKYH23MZ3N5'
       },
       {
-        id: 8,
+        id: 1,
         name: 'Data\nScientist',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-3522/CGM5KZTLHAWMJ1438B'
