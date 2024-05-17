@@ -8,16 +8,16 @@ export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     let careers = [
       {
-        id: 0,
-        name: 'Business Analyst\nProject Manager',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-3482/REK1RIQKKYH23MZ3N5'
-      },
-      {
         id: 1,
         name: 'Data\nScientist',
         location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-3522/CGM5KZTLHAWMJ1438B'
+        link: 'https://eigroup.breezy.hr/p/ef5b38b8b347-data-scientist'
+      },
+      {
+        id: 2,
+        name: 'Junior Data\nScientist',
+        location: 'Baku, Azerbaijan',
+        link: 'https://eigroup.breezy.hr/p/a68830d8e147-junior-data-scientist'
       }
 
     ];
