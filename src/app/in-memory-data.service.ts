@@ -18,6 +18,12 @@ export class InMemoryDataService implements InMemoryDbService {
         name: 'Junior Data\nScientist',
         location: 'Baku, Azerbaijan',
         link: 'https://eigroup.breezy.hr/p/a68830d8e147-junior-data-scientist'
+      },
+      {
+        id: 3,
+        name: 'Business Analyst /\nProject Manager',
+        location: 'Baku, Azerbaijan',
+        link: 'https://eigroup.breezy.hr/p/808e36f4c77f-business-analyst-project-manager'
       }
 
     ];
