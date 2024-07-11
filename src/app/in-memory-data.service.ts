@@ -21,13 +21,7 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id: 3,
-        name: 'Business Analyst /\nProject Manager',
-        location: 'Baku, Azerbaijan',
-        link: 'https://eigroup.breezy.hr/p/808e36f4c77f-business-analyst-project-manager'
-      },
-      {
-        id: 4,
-        name: 'BI Developer',
+        name: 'BI Developer\n‎',
         location: 'Baku, Azerbaijan',
         link: 'https://eigroup.breezy.hr/p/8c43af58e961-bi-developer'
       }
