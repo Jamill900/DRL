@@ -9,24 +9,30 @@ export class InMemoryDataService implements InMemoryDbService {
     let careers = [
       {
         id: 1,
-        name: 'Data\nScientist',
-        location: 'Baku, Azerbaijan',
-        link: 'https://eigroup.breezy.hr/p/ef5b38b8b347-data-scientist'
-      },
-      {
-        id: 2,
         name: 'Junior Data\nScientist',
         location: 'Baku, Azerbaijan',
         link: 'https://eigroup.breezy.hr/p/a68830d8e147-junior-data-scientist'
       },
       {
+        id: 2,
+        name: 'Signal Processing\nDeveloper',
+        location: 'Baku, Azerbaijan',
+        link: 'https://eigroup.breezy.hr/p/6a58ab66e91f-signal-processing-developer'
+      },
+      {
         id: 3,
+        name: 'Research Assistant\n(Data Science)',
+        location: 'Baku, Azerbaijan',
+        link: 'https://eigroup.breezy.hr/p/22771cf39a0c-research-assistant-data-science'
+      },
+      {
+        id: 4,
         name: 'BI Developer\n‎',
         location: 'Baku, Azerbaijan',
         link: 'https://eigroup.breezy.hr/p/8c43af58e961-bi-developer'
       },
       {
-        id: 3,
+        id: 5,
         name: 'Angular Frontend\nDeveloper',
         location: 'Baku, Azerbaijan',
         link: 'https://eigroup.breezy.hr/p/4b3e120f1685-angular-frontend-developer'
